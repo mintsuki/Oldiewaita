@@ -9,6 +9,8 @@ label:disabled selection, .selection-mode button.titlebutton:disabled, label:dis
 
 .selection-mode button.titlebutton:backdrop, label:backdrop:selected, calendar:backdrop:selected, row:backdrop:selected, treeview.view:backdrop:selected, modelbutton.flat:backdrop:selected, .menuitem.button.flat:backdrop:selected, .entry:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, entry selection:backdrop, flowbox flowboxchild:backdrop:selected, .view text selection:backdrop, iconview text selection:backdrop, textview text selection:backdrop:focus, textview text selection:backdrop, .view:backdrop:selected, iconview:backdrop:selected, .view text:backdrop:selected, iconview text:backdrop:selected, textview text:backdrop:selected { color: #d1ff96; background-color: #669900; }
 
+scale slider, scrollbar slider { background-image: radial-gradient(circle closest-side, currentColor, currentColor 90%, transparent); background-size: 4px, 4px; background-repeat: no-repeat; background-position: center; }
+
 * { padding: 0; -GtkToolButton-icon-spacing: 4; -GtkTextView-error-underline-color: #CC0000; -GtkScrolledWindow-scrollbar-spacing: 0; -GtkToolItemGroup-expander-size: 11; -GtkWidget-text-handle-width: 20; -GtkWidget-text-handle-height: 24; -GtkDialog-button-spacing: 4; -GtkDialog-action-area-border: 0; outline-color: alpha(currentColor,0.3); outline-style: dashed; outline-offset: -3px; outline-width: 1px; -gtk-outline-radius: 0px; -gtk-secondary-caret-color: #669900; }
 
 /*************** Base States * */
@@ -557,11 +559,25 @@ window.devel headerbar.titlebar:not(.selection-mode):backdrop { background: #3f3
 
 #NautilusPathBar { background: none; border-radius: 0px; }
 
+#NautilusPathBar button, #NautilusPathBar menubutton { margin: 0; }
+
+#NautilusPathBar > scrolledwindow > viewport > box > box > label { opacity: 0; margin: 0 -0.5em; padding: 0; }
+
 .nautilus-list-view listview > row { border-radius: 0px; margin: 0pX; }
 
 #NautilusViewCell { border-radius: 0px; }
 
 #NautilusViewCell box { margin: 0px; }
+
+.nautilus-window .collapse-spacing { padding: 0; }
+
+.nautilus-window headerbar { min-height: 2.7em; }
+
+.nautilus-window .nautilus-list-view columnview, .nautilus-window .nautilus-list-view listview, .nautilus-window .nautilus-list-view cell { margin: 0; }
+
+.nautilus-window .nautilus-list-view cell { padding: 0; }
+
+.nautilus-window .nautilus-list-view row { margin: 0; }
 
 /************** Tree Views * */
 treeview.view { border-left-color: #909194; border-top-color: #3f3e3e; }
@@ -995,7 +1011,7 @@ scale.vertical marks.bottom { margin-left: 6px; margin-right: -12px; }
 
 scale.horizontal indicator { min-height: 6px; min-width: 1px; }
 
-scale.horizontal.marks-after slider { border-radius: 5px 5px 100% 100%; min-width: 10px; padding: 0; margin-right: 5px; margin-left: 5px; }
+scale.horizontal.marks-after slider, scale.horizontal.color slider { border-radius: 5px 5px 100% 100%; min-width: 10px; padding: 0; margin-right: 5px; margin-left: 5px; }
 
 scale.horizontal.marks-before slider { border-radius: 100% 100% 5px 5px; min-width: 10px; padding: 0; margin-right: 5px; margin-left: 5px; }
 
@@ -1150,6 +1166,10 @@ expander title > arrow:disabled:backdrop { color: #493e37; }
 
 expander title > arrow:checked { -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
 
+.expander .expander-row-arrow { color: inherit; }
+
+.expander:checked .expander-row-arrow { color: #669900; }
+
 /************ Calendar * */
 calendar { color: #EDF0F5; border: 2px solid; background-color: #323232; border-left-color: #1e1e1e; border-top-color: #1e1e1e; border-right-color: #5a5a5a; border-bottom-color: #5a5a5a; }
 
@@ -1245,9 +1265,11 @@ placesview row.activatable:hover { background-color: transparent; }
 placesview > actionbar > revealer > box > label { padding-left: 8px; padding-right: 8px; }
 
 /********* Paned * */
-paned > separator { min-width: 4px; min-height: 4px; -gtk-icon-source: none; border-width: 2px; border-style: solid; background-image: radial-gradient(circle closest-side, #EDF0F5 0%, #EDF0F5 75%, rgba(237, 240, 245, 0) 100%); background-clip: padding-box; background-repeat: no-repeat; background-position: center; background-color: #3f3e3e; border-left-color: #6e6d6d; border-top-color: #6e6d6d; border-right-color: #272727; border-bottom-color: #272727; }
+paned > separator { min-width: 4px; min-height: 4px; -gtk-icon-source: none; border-width: 2px; border-style: solid; background-image: radial-gradient(circle closest-side, #EDF0F5 0%, #EDF0F5 75%, rgba(237, 240, 245, 0) 100%); background-clip: padding-box; background-repeat: no-repeat; background-position: center; box-shadow: none; margin: 0; padding: 0; background-color: #3f3e3e; border-left-color: #6e6d6d; border-top-color: #6e6d6d; border-right-color: #272727; border-bottom-color: #272727; }
 
 paned > separator:selected { background-color: #669900; border-left-color: #94b84d; border-top-color: #94b84d; border-right-color: #426300; border-bottom-color: #426300; }
+
+paned > separator:hover { background-color: #505050; }
 
 paned > separator.wide { min-width: 5px; min-height: 5px; }
 
@@ -1539,21 +1561,9 @@ XfdesktopIconView.view:active { text-shadow: none; color: #d1ff96; background-co
 
 .nemo-desktop-window stack { background: none; border: none; }
 
-.nautilus-window .top-bar { background-color: #507800; color: #d1ff96; }
+.top-bar { background-color: #507800; color: #d1ff96; }
 
-.nautilus-window .top-bar:backdrop { background-color: #3f3e3e; color: #EDF0F5; transition: none; }
-
-.nautilus-window .top-bar .collapse-spacing { padding: 0; }
-
-.nautilus-window headerbar { min-height: 2.7em; }
-
-.nautilus-window .nautilus-list-view columnview, .nautilus-window .nautilus-list-view listview, .nautilus-window .nautilus-list-view cell { margin: 0; }
-
-.nautilus-window .nautilus-list-view cell { padding: 0; }
-
-.nautilus-window .nautilus-list-view row { margin: 0; }
-
-#NautilusPathBar button, #NautilusPathBar menubutton { margin: 0; }
+.top-bar:backdrop { background-color: #3f3e3e; color: #EDF0F5; transition: none; }
 
 windowhandle > box { padding: 0; }
 

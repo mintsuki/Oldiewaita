@@ -2219,6 +2219,7 @@ scrollbar {
     background-image: none;
     min-width: $_slider_width;
     min-height: $_slider_width;
+    @extend %draggable;
     //margin: 3px;
     //border: 4px solid transparent;
     //border-radius: 10px;
@@ -2701,6 +2702,7 @@ scale {
     border-width: $border_width;
     border-style: solid;
     border-radius: $button_radius;
+    @extend %draggable;
     @include button(normal);
     
     &:hover { @include button(hover); }
@@ -2772,7 +2774,7 @@ scale {
     }
 
     //&.fine-tune indicator { min-height: ($_marks_length - 3px); }
-    &.marks-after {
+    &.marks-after, &.color {
     	slider{ border-radius: 5px 5px 100% 100%; min-width: 10px; padding: 0; margin-right: 5px; margin-left:5px;}}
     &.marks-before {slider{ border-radius: 100% 100% 5px 5px;min-width: 10px;padding: 0;margin-right: 5px; margin-left:5px;}}
   }
@@ -2813,7 +2815,7 @@ scale {
       }
 
       slider {
-        &:dir(ltr), &:dir(rtl) { // specificity bumb
+        &:dir(ltr), &:dir(rtl) { // specificity bump
           &:hover, &:backdrop, &:disabled, &:backdrop:disabled, & {
             margin-bottom: -15px;
             margin-top: 6px;
@@ -3146,6 +3148,16 @@ expander {
     &:checked { -gtk-icon-source: -gtk-icontheme('pan-down-symbolic'); }
   }
 }
+
+// expander rows, maybe too much creative UI...?
+.expander {
+    .expander-row-arrow {
+        color: inherit;
+    }
+    &:checked .expander-row-arrow {
+        color: $selected_bg_color;
+    }
+} 
 
 
 /************

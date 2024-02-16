@@ -14,6 +14,15 @@
 #NautilusPathBar {
     background: none;
     border-radius: 0px;
+    button, menubutton {
+        margin: 0;
+    }
+    > scrolledwindow > viewport > box > box > label { // let's make the slashes disappear
+	opacity: 0;
+	margin: 0 -0.5em;
+	padding: 0;
+	
+}
 }
 
 .nautilus-list-view listview > row {
@@ -25,3 +34,25 @@ margin: 0pX
     border-radius: 0px;
     & box { margin: 0px;}
 }
+
+// Nautilus improvements
+.nautilus-window {
+    
+    .collapse-spacing {
+        padding: 0;
+    }
+  
+  headerbar {
+    min-height: 2.7em;
+    }
+  .nautilus-list-view {
+    columnview, listview, cell {
+            margin: 0;
+    }
+    cell {padding: 0;}
+    
+    row {margin: 0;}
+    
+  }
+}
+

@@ -16,6 +16,8 @@ label:disabled > selection, label:disabled:selected, calendar > grid > label.day
 
 label:backdrop:selected, calendar > grid > label.day-number:backdrop:selected, row:backdrop:selected, columnview.view:backdrop:selected, treeview.view:backdrop:selected, modelbutton.flat:backdrop:selected, modelbutton.flat:backdrop:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop), modelbutton.flat:backdrop:focus:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop), .entry:backdrop:selected, gridview > child:backdrop:selected, flowbox > flowboxchild:backdrop:selected, .view:backdrop:selected, iconview:backdrop:selected, textview > text:backdrop:selected { color: #d1ff96; background-color: #669900; }
 
+scale > trough > slider, scrollbar > range > trough > slider { background-image: radial-gradient(circle closest-side, currentColor, currentColor 90%, transparent); background-size: 4px, 4px; background-repeat: no-repeat; background-position: center; }
+
 /*************** Base States * */
 .background { color: #EDF0F5; background-color: #3f3e3e; }
 
@@ -501,9 +503,9 @@ dropdown popover, combobox popover { margin-top: 6px; padding: 0; }
 
 dropdown popover listview, combobox popover listview { margin: 8px 0; }
 
-dropdown popover listview > row.activatable, combobox popover listview > row.activatable { padding: 8px; border-radius: 0px; }
+dropdown popover listview > row.activatable, dropdown popover listview > row.activatable:not(:first-child):not(:last-child), combobox popover listview > row.activatable, combobox popover listview > row.activatable:not(:first-child):not(:last-child) { padding: 8px; border-radius: 0px; }
 
-dropdown popover listview > row.activatable:selected, dropdown popover listview > row.activatable:selected:hover, combobox popover listview > row.activatable:selected, combobox popover listview > row.activatable:selected:hover { outline-color: rgba(255, 255, 255, 0.3); color: #d1ff96; background-color: #669900; border-left-color: #94b84d; border-top-color: #94b84d; border-right-color: #426300; border-bottom-color: #426300; box-shadow: none; }
+dropdown popover listview > row.activatable:selected, dropdown popover listview > row.activatable:selected:hover, dropdown popover listview > row.activatable:not(:first-child):not(:last-child):selected, dropdown popover listview > row.activatable:not(:first-child):not(:last-child):selected:hover, combobox popover listview > row.activatable:selected, combobox popover listview > row.activatable:selected:hover, combobox popover listview > row.activatable:not(:first-child):not(:last-child):selected, combobox popover listview > row.activatable:not(:first-child):not(:last-child):selected:hover { outline-color: rgba(255, 255, 255, 0.3); color: #d1ff96; background-color: #669900; border-left-color: #94b84d; border-top-color: #94b84d; border-right-color: #426300; border-bottom-color: #426300; box-shadow: none; }
 
 dropdown popover .dropdown-searchbar, combobox popover .dropdown-searchbar { padding: 6px; }
 
@@ -695,11 +697,25 @@ pathbar > button.slider-button { padding-left: 0; padding-right: 0; }
 
 #NautilusPathBar { background: none; border-radius: 0px; }
 
+#NautilusPathBar button, #NautilusPathBar menubutton { margin: 0; }
+
+#NautilusPathBar > scrolledwindow > viewport > box > box > label { opacity: 0; margin: 0 -0.5em; padding: 0; }
+
 .nautilus-list-view listview > row { border-radius: 0px; margin: 0pX; }
 
 #NautilusViewCell { border-radius: 0px; }
 
 #NautilusViewCell box { margin: 0px; }
+
+.nautilus-window .collapse-spacing { padding: 0; }
+
+.nautilus-window headerbar { min-height: 2.7em; }
+
+.nautilus-window .nautilus-list-view columnview, .nautilus-window .nautilus-list-view listview, .nautilus-window .nautilus-list-view cell { margin: 0; }
+
+.nautilus-window .nautilus-list-view cell { padding: 0; }
+
+.nautilus-window .nautilus-list-view row { margin: 0; }
 
 /************** Tree Views * */
 columnview.view, treeview.view { border-left-color: #575859; border-top-color: #575859; transition-property: outline, outline-width, outline-offset, outline-color; transition-duration: 300ms; animation-timing-function: ease-in-out; }
@@ -778,6 +794,8 @@ popover.background > contents > list, popover.background > contents > .view, pop
 popover.background > contents separator { background-color: #2d2c2c; margin: 3px; }
 
 popover.background > contents list separator { margin: 0; }
+
+popover.background > contents listview > row { border-radius: 0; }
 
 .osd popover.background, popover.background.touch-selection, popover.background.magnifier { background-color: transparent; }
 
@@ -1133,7 +1151,7 @@ scale.horizontal > value.right { margin-left: 9px; }
 
 scale.horizontal.marks-after slider { border-radius: 5px 5px 100% 100%; min-width: 10px; padding: 0; margin-right: 5px; margin-left: 5px; }
 
-scale.horizontal.marks-before slider { border-radius: 100% 100% 5px 5px; min-width: 10px; padding: 0; margin-right: 5px; margin-left: 5px; }
+scale.horizontal.marks-before slider, scale.horizontal.color slider { border-radius: 100% 100% 5px 5px; min-width: 10px; padding: 0; margin-right: 5px; margin-left: 5px; }
 
 scale.vertical > marks { color: alpha(currentColor,0.55); }
 
@@ -1147,7 +1165,7 @@ scale.vertical > value.top { margin-bottom: 9px; }
 
 scale.vertical > value.bottom { margin-top: 9px; }
 
-scale.vertical.marks-after slider { border-radius: 5px 100% 100% 5px; min-height: 10px; padding: 0; margin-top: 54px; margin-bottom: 5px; }
+scale.vertical.marks-after slider, scale.vertical.color slider { border-radius: 5px 100% 100% 5px; min-height: 10px; padding: 0; margin-top: 54px; margin-bottom: 5px; }
 
 scale.vertical.marks-before slider { border-radius: 100% 5px 5px 100%; min-height: 10px; padding: 0; margin-top: 5px; margin-bottom: 5px; }
 
@@ -1458,9 +1476,11 @@ placesview .server-list-button:checked > image { transition: 200ms cubic-bezier(
 placesview > actionbar > revealer > box > box { border-spacing: 6px; }
 
 /********* Paned * */
-paned > separator { min-width: 4px; min-height: 4px; -gtk-icon-source: none; border-width: 2px; border-style: solid; background-image: radial-gradient(circle closest-side, #EDF0F5 0%, #EDF0F5 75%, rgba(237, 240, 245, 0) 100%); background-clip: padding-box; background-repeat: no-repeat; background-position: center; background-color: #3f3e3e; border-left-color: #6e6d6d; border-top-color: #6e6d6d; border-right-color: #272727; border-bottom-color: #272727; }
+paned > separator { min-width: 4px; min-height: 4px; -gtk-icon-source: none; border-width: 2px; border-style: solid; background-image: radial-gradient(circle closest-side, #EDF0F5 0%, #EDF0F5 75%, rgba(237, 240, 245, 0) 100%); background-clip: padding-box; background-repeat: no-repeat; background-position: center; box-shadow: none; margin: 0; padding: 0; background-color: #3f3e3e; border-left-color: #6e6d6d; border-top-color: #6e6d6d; border-right-color: #272727; border-bottom-color: #272727; }
 
 paned > separator:selected { background-color: #669900; border-left-color: #94b84d; border-top-color: #94b84d; border-right-color: #426300; border-bottom-color: #426300; }
+
+paned > separator:hover { background-color: #505050; }
 
 paned > separator.wide { min-width: 5px; min-height: 5px; }
 
@@ -1705,21 +1725,9 @@ XfdesktopIconView.view:active { text-shadow: none; color: #d1ff96; background-co
 
 .nemo-desktop-window stack { background: none; border: none; }
 
-.nautilus-window .top-bar { background-color: #507800; color: #d1ff96; }
+.top-bar { background-color: #507800; color: #d1ff96; }
 
-.nautilus-window .top-bar:backdrop { background-color: #3f3e3e; color: #EDF0F5; transition: none; }
-
-.nautilus-window .top-bar .collapse-spacing { padding: 0; }
-
-.nautilus-window headerbar { min-height: 2.7em; }
-
-.nautilus-window .nautilus-list-view columnview, .nautilus-window .nautilus-list-view listview, .nautilus-window .nautilus-list-view cell { margin: 0; }
-
-.nautilus-window .nautilus-list-view cell { padding: 0; }
-
-.nautilus-window .nautilus-list-view row { margin: 0; }
-
-#NautilusPathBar button, #NautilusPathBar menubutton { margin: 0; }
+.top-bar:backdrop { background-color: #3f3e3e; color: #EDF0F5; transition: none; }
 
 windowhandle > box { padding: 0; }
 

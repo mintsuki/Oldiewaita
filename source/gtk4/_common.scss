@@ -1233,6 +1233,7 @@ combobox {
       margin: 8px 0;
 
       > row.activatable {
+        &, &:not(:first-child):not(:last-child){
          padding: 8px;
          border-radius: 0px;
 
@@ -1245,6 +1246,8 @@ combobox {
              box-shadow: none;
            }
          }
+         }
+         
       }
    }
 
@@ -1840,6 +1843,9 @@ popover.background {
     }
 
     list separator { margin: 0; }
+    listview > row {
+        border-radius: 0;
+    }
   }
 
   .osd &,
@@ -2059,6 +2065,7 @@ scrollbar {
     //transition: $_scrollbar_transition;
     outline: none; //cancelling libadwaita
     @include relief($button_bg);
+    @extend %draggable;
 
     &:hover { @include relief($scrollbar_slider_hover_color); }
 
@@ -2440,6 +2447,7 @@ scale {
     border-style: solid;
     border-radius: $button_radius;
     box-shadow: none; //overwriting adwaita
+    @extend %draggable;
     @include button(normal);
 
     &:hover { @include button(hover); }
@@ -2503,7 +2511,7 @@ scale {
     //  indicator { min-height: ($_marks_length - 3px); }
     //}
     &.marks-after {slider{ border-radius: 5px 5px 100% 100%;min-width: 10px; padding: 0; margin-right: 5px; margin-left:5px;}}
-    &.marks-before {slider{ border-radius: 100% 100% 5px 5px;min-width: 10px; padding: 0; margin-right: 5px; margin-left:5px;}}
+    &.marks-before, &.color {slider{ border-radius: 100% 100% 5px 5px;min-width: 10px; padding: 0; margin-right: 5px; margin-left:5px;}}
 
   }
 
@@ -2529,7 +2537,7 @@ scale {
 
     //  indicator { min-height: ($_marks_length - 3px); }
     //  }
-    &.marks-after {slider{ border-radius: 5px 100% 100% 5px;min-height: 10px;padding: 0;margin-top: 54px; margin-bottom:5px;}}
+    &.marks-after, &.color {slider{ border-radius: 5px 100% 100% 5px;min-height: 10px;padding: 0;margin-top: 54px; margin-bottom:5px;}}
     &.marks-before {slider{ border-radius: 100% 5px 5px 100%;min-height: 10px;padding: 0;margin-top: 5px; margin-bottom:5px;}}
   }
 

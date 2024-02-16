@@ -46,10 +46,8 @@ XfdesktopIconView.view:active {
 	border: none;
 }
 
-
-// Nautilus improvements
-.nautilus-window {
-    .top-bar {
+// general libadwaita
+.top-bar {
     background-color: $titlebar_active_bg;
     color: $titlebar_active_fg;
     
@@ -58,29 +56,8 @@ XfdesktopIconView.view:active {
         color: $titlebar_backdrop_fg;
         transition: none;//$backdrop_transition;
     }
-    .collapse-spacing {
-        padding: 0;
-    }
-  }
-  headerbar {
-    min-height: 2.7em;
-    }
-  .nautilus-list-view {
-    columnview, listview, cell {
-            margin: 0;
-    }
-    cell {padding: 0;}
-    
-    row {margin: 0;}
-    
-  }
 }
 
-#NautilusPathBar {
-    button, menubutton {
-        margin: 0;
-    }
-}
 
 windowhandle > box {
 padding: 0;
