@@ -750,6 +750,55 @@ button {
     }
   }
 
+  headerbar &, .topbar & {
+    @include button(normal, $titlebar_active_bg, $titlebar_active_fg);
+    &:hover, &:focus {
+      @include button(hover, $titlebar_active_bg, $titlebar_active_fg);
+    }
+
+    &:active {
+      @include button(active, $titlebar_active_bg, $titlebar_active_fg);
+    }
+    
+    &:checked, &:checked:active {
+      @include button(checked-active);
+    }
+    
+    &:checked:hover:not(:active), &:checked:focus:not(:active) {
+     	@include button(checked-hover);
+    }
+
+    &:disabled {
+      @include button(insensitive);
+      &:active,
+      &:checked { @include button(insensitive-active); }
+    }
+  }
+  headerbar:backdrop &, .topbar:backdrop & {
+    @include button(normal, $titlebar_backdrop_bg, $titlebar_backdrop_fg);
+    &:hover, &:focus {
+      @include button(hover, $titlebar_backdrop_bg, $titlebar_backdrop_fg);
+    }
+
+    &:active {
+      @include button(active, $titlebar_backdrop_bg, $titlebar_backdrop_fg);
+    }
+    
+    &:checked, &:checked:active {
+      @include button(checked-active);
+    }
+    
+    &:checked:hover:not(:active), &:checked:focus:not(:active) {
+     	@include button(checked-hover);
+    }
+
+    &:disabled {
+      @include button(insensitive);
+      &:active,
+      &:checked { @include button(insensitive-active); }
+    }
+  }
+
   .stack-switcher > & {
     // to position the needs attention dot, padding is added to the button
     // child, a label needs just lateral padding while an icon needs vertical
@@ -1165,6 +1214,7 @@ spinbutton {
     }
     
     
+    
   }
 
   // OSD horizontal
@@ -1244,8 +1294,8 @@ spinbutton {
     }
 
     button {
-      min-height: 32px;
-      min-width: 32px;
+      min-height: 1em;
+      min-width: 1em;
       padding: 0;
 
       &.up { @extend %top_button; }
@@ -1308,7 +1358,7 @@ combobox {
       &:dir(rtl) { @extend %linked_left; }
     }
   }
-  button {
+  button, button:backdrop {
     min-height: $_entry_height;
     min-width: $_entry_height;
     padding: 2px;
@@ -1317,7 +1367,7 @@ combobox {
   &:drop(active) { // FIXME: untested
     box-shadow: none;
 
-    button.combo { @extend %button_basic_drop_active; }
+    button.combo, button.combo:backdrop { @extend %button_basic_drop_active; }
   }
 }
 
@@ -1342,26 +1392,20 @@ combobox {
 %toolbar {
   -GtkWidget-window-dragging: true;
   padding: 4px;
-  background-color: $bg_color;
-  //border-width: $border_width;
-  //border-style: solid;
-  //@include relief($bg_color);
+  $border-radius: $window_radius;
+  border-width: $border_width;
+  border-style: solid;
+  color: $fg_color;
+  @include relief($bg_color);
 }
 
 toolbar {
   @extend %toolbar;
-
   padding: 4px 3px 3px 4px;
-
-  // on OSD
-  .osd & { background-color: transparent; }
-
-  // stand-alone OSD toolbars
-  &.osd {
+  // stand-alone OSD toolbars // on OSD
+  .osd &, &.osd {
     padding: 13px;
-    border: none;
-    border-radius: 5px;
-    background-color: $osd_bg_color;
+    @include relief($osd_bg_color);
 
     &.left,
     &.right,
@@ -2082,7 +2126,7 @@ menu,
     border-radius: 0;
 
     &.top {
-      margin-top: -4px;
+      //margin-top: -4px;
       border-bottom: 1px solid mix($fg_color, $base_color, 10%);
       border-top-right-radius: $menu_radius;
       border-top-left-radius: $menu_radius;
@@ -2090,8 +2134,8 @@ menu,
     }
 
     &.bottom {
-      margin-top: 8px;
-      margin-bottom: -12px;
+      //margin-top: 8px;
+      //margin-bottom: -12px;
       border-top: 1px solid mix($fg_color, $base_color, 10%);
       border-bottom-right-radius: $menu_radius;
       border-bottom-left-radius: $menu_radius;
@@ -2100,7 +2144,7 @@ menu,
 
     &:hover { background-color: mix($fg_color, $base_color, 10%); }
 
-    &:backdrop { background-color: $backdrop_menu_color; }
+    //&:backdrop { background-color: $backdrop_menu_color; }
 
     &:disabled {
       color: transparent;
@@ -2216,7 +2260,6 @@ scrollbar {
   slider {
     @extend %button_basic;
     padding: 0;
-    background-image: none;
     min-width: $_slider_width;
     min-height: $_slider_width;
     @extend %draggable;
@@ -2257,7 +2300,7 @@ scrollbar {
   &.vertical slider { min-height: $_slider_min_length; }
 
   // button styling
-  button {
+  button, button:backdrop {
     padding: 0;
     min-width: $_slider_width;
     min-height: $_slider_width;
@@ -2307,10 +2350,10 @@ scrollbar {
   &.overlay-indicator { opacity: 0.5; }
 }
 
-treeview ~ scrollbar.vertical {
-  border-top: 1px solid $borders_color;
-  margin-top: -1px;
-}
+//treeview ~ scrollbar.vertical {
+//  border-top: 1px solid $borders_color;
+//  margin-top: -1px;
+//}
 
 /**********
  * Switch *
@@ -2342,6 +2385,7 @@ switch {
     border-radius: $button_radius;
     transition: $button_transition;
     -gtk-outline-radius: 20px;
+    @extend %draggable;
 
     @include button(normal);
   }
@@ -2439,7 +2483,7 @@ radio {
   border: 1px solid;
   -gtk-icon-source: none;
 
-  & {
+  &, &.view, .view & {
     // for unchecked
     
     $_c: $button_bg;//if(lightness($bg_color) > lightness($base_color), mix($bg_color, white, 90%), mix($base_color, white, 90%));
@@ -2456,9 +2500,9 @@ radio {
     }
   }
 
-  & {
+  &, &.view, .view & {
     // for checked
-    @each $t in (':checked'), (':indeterminate') {
+    @each $t in (':checked'){ //, (':indeterminate') {
       &#{$t} {
         @each $state, $t in ("", "normal"),
                             (":hover", "hover"),
@@ -2475,15 +2519,15 @@ radio {
   }
 
   //&:backdrop { transition: $backdrop_transition; }
-  &:disabled {
-  	color:$insensitive_fg_color;
-  	border-color: $insensitive_fg_color;
-  }
-  @if $variant == 'light' {
-    // the borders of the light variant versions of checks and radios are too similar in luminosity to the selected background
-    // color, hence we need special casing.
-    row:selected & { border-color: $checkradio_borders_color; }
-  }
+//  &:disabled {
+//  	color:$insensitive_fg_color;
+//  	border-color: $insensitive_fg_color;
+//  }
+//  @if $variant == 'light' {
+//    // the borders of the light variant versions of checks and radios are too similar in luminosity to the selected background
+//    // color, hence we need special casing.
+//    row:selected & { border-color: $checkradio_borders_color; }
+//  }
 
   .osd & {
     @include button(osd);
@@ -2497,18 +2541,18 @@ radio {
   menu menuitem & {
     margin: 0; // this is a workaround for a menu check/radio size allocation issue
 
-    &, &:checked, &:indeterminate {
-      &, &:hover, &:disabled { //FIXME use button reset mixin
-        min-height: 14px;
-        min-width: 14px;
-        background-image: none;
-        background-color: transparent;
-        box-shadow: none;
-        -gtk-icon-shadow: none;
-        color: inherit;
-        border-color: currentColor;
-      }
-    }
+//    &, &:checked, &:indeterminate {
+//      &, &:hover, &:disabled { //FIXME use button reset mixin
+//        min-height: 14px;
+//        min-width: 14px;
+//        background-image: none;
+//        background-color: transparent;
+//        box-shadow: none;
+//        -gtk-icon-shadow: none;
+//        color: inherit;
+//        border-color: currentColor;
+//      }
+//    }
   }
 }
 
@@ -2525,7 +2569,7 @@ check {
 
 %radio,
 radio {
-  border-radius: 100%;
+  &, &.view, .view & {border-radius: 100%;}
 
   &:checked { -gtk-icon-source: image(-gtk-recolor(url("assets/bullet-symbolic.svg")),
                                       -gtk-recolor(url("assets/bullet-symbolic.symbolic.png"))); }
@@ -3601,24 +3645,24 @@ colorchooser .popover.osd { border-radius: 5px; }
   rubberband, .rubberband { @extend rubberband; }
 }
 
-.scale-popup {
-  .osd & { @extend %osd; }
+//.scale-popup {
+//  &, .osd & { @extend %osd; }
 
-  .osd & button.flat {  //FIXME: quick hack, redo properly
-    border-style: none;
-    //border-radius: 5px;
-  }
+//  .osd & button.flat {  //FIXME: quick hack, redo properly
+//    border-style: none;
+//    //border-radius: 5px;
+//  }
 
-  button { // +/- buttons on GtkVolumeButton popup
-    &:hover {
-      @extend %undecorated_button;
-      background-color: transparentize($fg_color,0.9);
-      //border-radius: 5px;
-    }
+//  button { // +/- buttons on GtkVolumeButton popup
+//    &:hover {
+//      @extend %undecorated_button;
+//      background-color: transparentize($fg_color,0.9);
+//      //border-radius: 5px;
+//    }
 
-    //&:backdrop { &:hover, &:disabled, & { @extend %undecorated_button; }}
-  }
-}
+//    //&:backdrop { &:hover, &:disabled, & { @extend %undecorated_button; }}
+//  }
+//}
 
 
 /**********************
@@ -3746,7 +3790,7 @@ button.titlebutton {
 	  &:hover { &, &:backdrop { @include button(hover, $close_bg_color, $titlebar_active_fg);}}//, $titlebar_active_fg); } }
 	  &:active { &, &:backdrop { @include button(active, $close_bg_color, $titlebar_active_fg); } }
 	  &:disabled { @include button(insensitive); }
-	  &:backdrop { @include button(normal); }
+	  &:backdrop { @include button(normal, $titlebar_backdrop_bg, $titlebar_backdrop_fg); }
 	}
 	
 	&.maximize { 
@@ -3754,7 +3798,7 @@ button.titlebutton {
 	  &:hover {&, &:backdrop {@include button(hover, $maximize_bg_color, $titlebar_active_fg);}}
 	  &:active {&, &:backdrop {@include button(active,$maximize_bg_color, $titlebar_active_fg);}}
 	  &:disabled {@include button(insensitive);}
-	  &:backdrop {@include button(normal);}
+	  &:backdrop {@include button(normal, $titlebar_backdrop_bg, $titlebar_backdrop_fg);}
 	}
 	
 	&.minimize { 
@@ -3762,7 +3806,7 @@ button.titlebutton {
 	  &:hover {&, &:backdrop {@include button(hover, $minimize_bg_color, $titlebar_active_fg);}}
 	  &:active {&, &:backdrop {@include button(active, $minimize_bg_color, $titlebar_active_fg);}}
 	  &:disabled {@include button(insensitive);}
-	  &:backdrop {@include button(normal);}
+	  &:backdrop {@include button(normal, $titlebar_backdrop_bg, $titlebar_backdrop_fg);}
 	}
 	
   .selection-mode & {

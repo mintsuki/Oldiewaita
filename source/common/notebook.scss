@@ -180,7 +180,7 @@ notebook, notebook.frame {
 
       &:hover {
         color: $fg_color;
-        background-color: darken($bg_color,4%);
+        background-color: mix($base_color, $text_color,95%);
 
         &.reorderable-page {
           //border-color: transparentize($borders_color, 0.7);

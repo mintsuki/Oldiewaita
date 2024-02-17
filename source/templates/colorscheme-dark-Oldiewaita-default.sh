@@ -7,45 +7,45 @@
 #  2. go up one directory, to "source", and execute "./compile.sh light" or "./compile.sh dark" depending on whether the theme is light or dark
 
 
-# DarkRed: dark with red accents, based on Kvantum's DarkRed theme.
+# Soil colors but less dark: dark gray, with green accents, readable and easy on the eyes
 
 vwindow_fg="#ffffff"
-vwindow_bg="#3f3f3f"
+vwindow_bg="#606060"
 vtext_widget_fg="#ffffff"
-vtext_widget_bg="#2e2e2e"
+vtext_widget_bg="#555555"
 
-vselected_fg="#ffffff"
-vselected_bg="#a11014"
+vselected_fg="#f9f06b"
+vselected_bg="#93531c"
 
 vbutton_fg=$vtext_widget_fg
-vbutton_bg="#333333"
+vbutton_bg="#777777"
 vbutton_checked_bg=$vselected_bg
 vbutton_checked_fg=$vselected_fg
 
 
-vdisabled_fg="#A7A7A7"
+vdisabled_fg="#77767b"
 vdisabled_bg="#404040"
 
 # Usually an automatic fg color on these backgrounds should check this value!
 
-vwarningc="#F5BC00"
-verrorc="#FF5E00"
-vsuccessc="#38D133"
+vwarningc="#f57900"
+verrorc="#CC0000"
+vsuccessc="#33d17a"
 
 
 vtitlebar_active_fg=$vselected_fg
-vtitlebar_active_bg="#633133"
+vtitlebar_active_bg="#503e2f"
 
 vtitlebar_backdrop_fg=$vwindow_fg
 vtitlebar_backdrop_bg=$vwindow_bg
 
-vhint_fg="#DBDBB6"
-vhint_bg="#212121"
+vhint_fg="#7dbf60"
+vhint_bg="#555e55"
 
 vosd_fg=$vhint_fg
 vosd_bg=$vhint_bg
 
-vlink_fg="#99A2F1"
+vlink_fg="#99c1f1"
 vlink_visited_fg="#dc8add"
 
 vbutton_radius="0px"
