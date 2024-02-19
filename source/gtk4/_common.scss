@@ -2339,8 +2339,8 @@ radio {
                                                   -gtk-recolor(url("#{$assets}/dash@2-symbolic.symbolic.png"))); }
 }
 
-treeview.view check:not(:checked),
-treeview.view radio:not(:checked) {
+treeview.view check:not(:checked):not(:disabled),
+treeview.view radio:not(:checked):not(:disabled) {
   &:selected, & {
     &:focus, & {
       color: $checkradio_fg_color;

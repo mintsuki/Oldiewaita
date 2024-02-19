@@ -962,7 +962,7 @@ radio:checked:not(:backdrop), radio:indeterminate:not(:backdrop), check:checked:
 
 menu menuitem radio:checked:not(:backdrop), menu menuitem radio:indeterminate:not(:backdrop), menu menuitem check:checked:not(:backdrop), menu menuitem check:indeterminate:not(:backdrop) { transition: none; }
 
-treeview.view check:not(:checked):selected:focus, treeview.view check:not(:checked):selected, treeview.view check:not(:checked):focus, treeview.view check:not(:checked), treeview.view radio:not(:checked):selected:focus, treeview.view radio:not(:checked):selected, treeview.view radio:not(:checked):focus, treeview.view radio:not(:checked) { color: #ffffff; background-color: #777777; }
+treeview.view check:not(:checked):not(:disabled):selected:focus, treeview.view check:not(:checked):not(:disabled):selected, treeview.view check:not(:checked):not(:disabled):focus, treeview.view check:not(:checked):not(:disabled), treeview.view radio:not(:checked):not(:disabled):selected:focus, treeview.view radio:not(:checked):not(:disabled):selected, treeview.view radio:not(:checked):not(:disabled):focus, treeview.view radio:not(:checked):not(:disabled) { color: #ffffff; background-color: #777777; }
 
 /************ GtkScale * */
 levelbar > trough, progressbar trough, scale fill, scale trough { border: 2px solid; background-color: #535353; border-left-color: #373737; border-top-color: #373737; border-right-color: #8b8b8b; border-bottom-color: #8b8b8b; }

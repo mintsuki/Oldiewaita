@@ -1104,7 +1104,7 @@ treeview.view radio:checked:selected, radio:checked { -gtk-icon-source: -gtk-sca
 
 treeview.view radio:indeterminate:selected, radio:indeterminate { -gtk-icon-source: -gtk-scaled(-gtk-recolor(url("assets/dash-symbolic.symbolic.png")), -gtk-recolor(url("assets/dash@2-symbolic.symbolic.png"))); }
 
-treeview.view check:not(:checked):selected:focus, treeview.view check:not(:checked):selected, treeview.view check:not(:checked):focus, treeview.view check:not(:checked), treeview.view radio:not(:checked):selected:focus, treeview.view radio:not(:checked):selected, treeview.view radio:not(:checked):focus, treeview.view radio:not(:checked) { color: #ffffff; background-color: #777777; }
+treeview.view check:not(:checked):not(:disabled):selected:focus, treeview.view check:not(:checked):not(:disabled):selected, treeview.view check:not(:checked):not(:disabled):focus, treeview.view check:not(:checked):not(:disabled), treeview.view radio:not(:checked):not(:disabled):selected:focus, treeview.view radio:not(:checked):not(:disabled):selected, treeview.view radio:not(:checked):not(:disabled):focus, treeview.view radio:not(:checked):not(:disabled) { color: #ffffff; background-color: #777777; }
 
 /************ GtkScale * */
 levelbar > trough, progressbar > trough, scale > trough > fill, scale > trough { border: 2px solid; background-color: #535353; border-left-color: #373737; border-top-color: #373737; border-right-color: #8b8b8b; border-bottom-color: #8b8b8b; outline: none; border-radius: 0px; }
