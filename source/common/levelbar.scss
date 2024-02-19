@@ -58,19 +58,17 @@ levelbar {
     //border: 1px solid;
 
     &.low {
-      //border-color: $warning_color;
-      background-color: $warning_color;
+        &, &.filled { background-color: $warning_color; }
     }
 
-    &.high,
-    &:not(.empty) {
+    &.high, &.filled {
       //border-color: $selected_bg_color;
       background-color: $selected_bg_color;
     }
 
     &.full {
       //border-color: $success_color;
-      background-color: $success_color;
+      &, &.filled {background-color: $success_color;}
     }
 
     &.empty {

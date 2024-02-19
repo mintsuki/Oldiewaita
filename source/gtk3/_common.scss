@@ -750,7 +750,7 @@ button {
     }
   }
 
-  headerbar &, .topbar & {
+  @at-root %header_button, headerbar &, .topbar & {
     @include button(normal, $titlebar_active_bg, $titlebar_active_fg);
     &:hover, &:focus {
       @include button(hover, $titlebar_active_bg, $titlebar_active_fg);
@@ -773,31 +773,32 @@ button {
       &:active,
       &:checked { @include button(insensitive-active); }
     }
-  }
-  headerbar:backdrop &, .topbar:backdrop & {
-    @include button(normal, $titlebar_backdrop_bg, $titlebar_backdrop_fg);
-    &:hover, &:focus {
-      @include button(hover, $titlebar_backdrop_bg, $titlebar_backdrop_fg);
-    }
+    &:backdrop {
+        @include button(normal, $titlebar_backdrop_bg, $titlebar_backdrop_fg);
+        &:hover, &:focus {
+          @include button(hover, $titlebar_backdrop_bg, $titlebar_backdrop_fg);
+        }
 
-    &:active {
-      @include button(active, $titlebar_backdrop_bg, $titlebar_backdrop_fg);
-    }
-    
-    &:checked, &:checked:active {
-      @include button(checked-active);
-    }
-    
-    &:checked:hover:not(:active), &:checked:focus:not(:active) {
-     	@include button(checked-hover);
-    }
+        &:active {
+          @include button(active, $titlebar_backdrop_bg, $titlebar_backdrop_fg);
+        }
+        
+        &:checked, &:checked:active {
+          @include button(checked-active);
+        }
+        
+        &:checked:hover:not(:active), &:checked:focus:not(:active) {
+         	@include button(checked-hover);
+        }
 
-    &:disabled {
-      @include button(insensitive);
-      &:active,
-      &:checked { @include button(insensitive-active); }
+        &:disabled {
+          @include button(insensitive);
+          &:active,
+          &:checked { @include button(insensitive-active); }
+        }
     }
   }
+
 
   .stack-switcher > & {
     // to position the needs attention dot, padding is added to the button
@@ -1477,7 +1478,7 @@ searchbar > revealer > box {
 headerbar {
   padding: 4px;
   min-height: $_headerbar_height;
-  border: $border_width solid;
+  border: ($border_width + 1px) solid;
   @include relief($titlebar_active_bg);
   border-radius: 0px;
   background-color: $titlebar_active_bg;
@@ -1917,39 +1918,22 @@ treeview.view {
   }
 
   &.progressbar { // progress bar in treeviews
-    @if $variant == light { color: $base_color; }
-
-    background-color: $progress_bg_color;
-    background-image: image($progress_bg_color);
-    box-shadow: none;
-
+    color: $selected_fg_color;
+    border: $border_width solid;
+    @include relief($selected_bg_color);
     &:selected {
       &:focus, & {
-
-        @if $variant == 'light' {
-          color: $selected_bg_color;
-
-        }
-
-        @else { box-shadow: inset 0 1px transparentize(white, 0.95); }
-
-        background-image: image($base_color);
-
-
+        @include relief(mix($selected_bg_color, $selected_fg_color, 90%));
       }
     }
-
   }
 
   &.trough { // progress bar trough in treeviews
     background-color: transparentize($fg_color,0.9);
-
+    
     &:selected {
       &:focus, & {
-        background-color: if($variant == 'light',
-                             transparentize($selected_fg_color, 0.7),
-                             darken($selected_bg_color, 10%));
-
+        
       }
     }
   }
@@ -2365,6 +2349,7 @@ switch {
   border: $border_width solid;
   border-radius: $button_radius;
   color: $fg_color;
+  padding: $border_width;
   @include relief($dark_fill, sunken);
   //text-shadow: 0 1px transparentize(black, 0.9);
 
@@ -2376,11 +2361,11 @@ switch {
   &:disabled {
     color: $insensitive_fg_color;
     @include relief($insensitive_bg_color,sunken);  }
-
+  
   slider {
     margin: 0px;
-    min-width: 24px;
-    min-height: 24px;
+    min-width: 20px;
+    min-height: 20px;
     border: $border_width solid;
     border-radius: $button_radius;
     transition: $button_transition;
@@ -2602,13 +2587,13 @@ menu menuitem {
   }
 }
 
-treeview.view check,
-treeview.view radio {
-  &:selected {
+treeview.view check:not(:checked),
+treeview.view radio:not(:checked) {
+  &:selected, & {
     &:focus, & {
       color: $checkradio_fg_color;
-
-      @if $variant == 'light' { border-color: $selected_borders_color; }
+      background-color: $checkradio_bg_color;
+      
     }
   }
 }
@@ -3296,7 +3281,12 @@ filechooser {
     //&:backdrop { border-top-color: $backdrop_borders_color; }
   }
 
-  #pathbarbox { border-bottom: 1px solid $bg_color; }
+  #pathbarbox { 
+    border-width: $border_width;
+    border-bottom-width: $border_width;
+    border-style: solid;
+    @include relief($base_color);
+   }
 }
 
 filechooserbutton:drop(active) {
