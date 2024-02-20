@@ -64,4 +64,17 @@ $popover_radius: $window_radius;
     background-position: center;
 }
 
+%disabled_pattern {
+
+    background-image: linear-gradient(45deg, 
+        gtkalpha(currentColor, 0.5) 10%, 
+        gtkalpha(currentColor, 0.0) 10%, 
+        gtkalpha(currentColor, 0.0) 50%, 
+        gtkalpha(currentColor, 0.5) 50%, 
+        gtkalpha(currentColor, 0.5) 60%, 
+        gtkalpha(currentColor, 0.0) 60% );
+    background-size: 0.6em 0.6em;
+    background-repeat: repeat;
+    background-position: center;
+}
 

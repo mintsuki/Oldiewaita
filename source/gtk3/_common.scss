@@ -325,7 +325,7 @@ entry {
 
     &:focus { @include entry(focus); }
 
-    &:disabled { @include entry(insensitive); }
+    &:disabled { @include entry(insensitive); @extend %disabled_pattern; }
 
 
     selection { @extend %selected_items; }
@@ -365,7 +365,7 @@ entry {
 
       &:focus { @include entry(osd-focus); }
 
-      &:disabled { @include entry(osd-insensitive); }
+      &:disabled { @include entry(osd-insensitive); @extend %disabled_pattern;}
     }
   }
 
@@ -611,7 +611,7 @@ button {
           color: $selected_fg_color;
           border-color: transparent;
 
-          &:backdrop { color: if($variant=='light', $backdrop_base_color, $backdrop_fg_color); }
+          //&:backdrop { color: if($variant=='light', $backdrop_base_color, $backdrop_fg_color); }
         }
       }
     }
@@ -651,6 +651,7 @@ button {
     &:disabled {
       //&:backdrop, & {
         @include button(osd-insensitive);
+        
 
         //border: none;
       //}
@@ -689,7 +690,7 @@ button {
       &:disabled {
         @include button(insensitive);
         background-color: $insensitive_bg_color;
-        background-image: none;
+        //background-image: none;
         border-color: transparent;
         box-shadow: none;
       }
@@ -2270,7 +2271,7 @@ scrollbar {
       //min-height: $_fine-tune_slider_border+1;
       //margin: 0;
       
-      &, &:hover, &:active {@include relief($hint_bg);}
+      &, &:hover, &:active {@include relief($warning_color);}
       
     }
 
@@ -2383,7 +2384,7 @@ switch {
 
   //&:checked > slider { border: 1px solid $checkradio_borders_color; } //no special drawing for a checked switch slider
 
-  &:disabled slider { @include button(insensitive); }
+  &:disabled slider { @include button(insensitive);}
 
 
   //row:selected & {
@@ -2682,7 +2683,7 @@ scale {
 
     // to make the trough grow in fine-tune mode
     //trough {border-color: $success_color;}
-    slider {&, &:active, &:hover, &:focus { @include relief($hint_bg);}}//margin: -6px; }
+    slider {&, &:active, &:hover, &:focus { @include relief($warning_color);}}//margin: -6px; }
 
     fill,
     highlight,

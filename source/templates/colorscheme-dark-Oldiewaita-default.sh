@@ -23,8 +23,8 @@ vbutton_checked_bg=$vselected_bg
 vbutton_checked_fg=$vselected_fg
 
 
-vdisabled_fg="#77767b"
-vdisabled_bg="#404040"
+vdisabled_fg="#878787"
+vdisabled_bg="#595959"
 
 # Usually an automatic fg color on these backgrounds should check this value!
 

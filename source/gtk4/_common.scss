@@ -324,7 +324,7 @@ entry {
       }
     }
 
-    &:disabled { @include entry(insensitive); }
+    &:disabled { @include entry(insensitive); @extend %disabled_pattern;}
 
     > text > selection {
       background-color: $selected_bg_color;
@@ -2123,7 +2123,7 @@ scrollbar {
       //transition: none;
       //min-width: $_fine-tune_slider_border+1;
       //min-height: $_fine-tune_slider_border+1;
-      &, &:hover, &:active {@include relief($hint_bg);}
+      &, &:hover, &:active {@include relief($warning_color);}
     }
 
     //&.horizontal > trough > slider { border-width: $_fine-tune_slider_border 4px; }
@@ -2443,7 +2443,7 @@ scale {
     //}
 
     // to make the trough grow in fine-tune mode //no longer, just background change
-    > trough > slider {&, &:active, &:hover, &:focus { @include relief($hint_bg);}}//margin: -6px; }
+    > trough > slider {&, &:active, &:hover, &:focus { @include relief($warning_color);}}//margin: -6px; }
 
     > trough > fill,
     > trough > highlight,
@@ -3068,7 +3068,7 @@ calendar {
   > header {
     border-bottom: 1px solid $borders_color;
 
-    > button, button:backdrop { //backdrop as a workaround...
+    button, button.image-button { //backdrop as a workaround...
         padding: 0.2em;
         min-width: 1em;
         min-height: 1em;

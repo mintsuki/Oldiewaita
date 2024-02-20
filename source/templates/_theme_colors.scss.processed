@@ -12,8 +12,8 @@ $button_checked_bg: #93531c;
 $button_checked_fg: #f9f06b;
 
 
-$disabled_fg: #77767b;
-$disabled_bg: #404040;
+$disabled_fg: #878787;
+$disabled_bg: #595959;
 
 /*Usually an automatic fg color on these backgrounds should check this value!*/
 $warningc: #f57900;

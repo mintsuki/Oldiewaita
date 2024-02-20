@@ -85,6 +85,7 @@ $_default_button_c: $button_bg;
   //
   		color: $insensitive_fg_color;
   		@include relief($insensitive_bg_color);
+  		@extend %disabled_pattern;
   	}
   	@else if $t==insensitive-active {
   	  //
@@ -92,6 +93,7 @@ $_default_button_c: $button_bg;
   	//
   		color: $insensitive_fg_color;
   		@include relief(mix($insensitive_bg_color, $button_checked_bg, 85%), sunken);
+  		@extend %disabled_pattern;
 
   	}
   	

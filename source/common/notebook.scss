@@ -200,6 +200,7 @@ notebook, notebook.frame {
           //&:hover { background-color: transparentize($bg_color, 0.3); }
         }
       }
+      &:disabled {@extend %disabled_pattern;}
 
 
       // colors the button like the label, overridden otherwise
