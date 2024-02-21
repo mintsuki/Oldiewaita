@@ -58,6 +58,10 @@ XfdesktopIconView.view:active {
     }
 }
 
+.character-list-scroll{ //On gnome-characters I've noticed that on light themes, something weird happens, let's hope this (seemingly unnecessary) fixes it!
+    color: $text_color;
+    background-color: $base_color;
+}
 
 windowhandle > box {
 padding: 0;

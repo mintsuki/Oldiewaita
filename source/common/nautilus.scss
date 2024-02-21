@@ -14,22 +14,24 @@
 #NautilusPathBar {
     background: none;
     border-radius: 0px;
-    button, menubutton {
+    button, menubutton, #NautilusPathButton { //why a repeated id?? shouldn't that be a class, programmer that programs Nautilus? I've never programmed a GTK app, though!
         margin: 0;
-        label {font-weight: normal;}
+        label {font-weight: normal; font-style: italic;} //this italic is a subtle reference to the removed slashes
     }
-    > scrolledwindow > viewport > box > box > label { // let's make the slashes disappear
+    > scrolledwindow > viewport > box > box > label { // makes the slashes disappear
 	opacity: 0;
 	margin: 0 -0.5em;
 	padding: 0;
     }
-    button.current-dir {
+    
+    button.current-dir, #NautilusPathButton.current-dir {
         @include button(checked-active);
         &:hover {
             @include button(checked-hover);
         }
         label {
             font-weight: bold;
+            font-style: normal;
         }
     }
 }

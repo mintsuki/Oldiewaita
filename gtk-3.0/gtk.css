@@ -585,17 +585,17 @@ window.devel headerbar.titlebar:not(.selection-mode):backdrop { background: #606
 
 #NautilusPathBar { background: none; border-radius: 0px; }
 
-#NautilusPathBar button, #NautilusPathBar menubutton { margin: 0; }
+#NautilusPathBar button, #NautilusPathBar menubutton, #NautilusPathBar #NautilusPathButton { margin: 0; }
 
-#NautilusPathBar button label, #NautilusPathBar menubutton label { font-weight: normal; }
+#NautilusPathBar button label, #NautilusPathBar menubutton label, #NautilusPathBar #NautilusPathButton label { font-weight: normal; font-style: italic; }
 
 #NautilusPathBar > scrolledwindow > viewport > box > box > label { opacity: 0; margin: 0 -0.5em; padding: 0; }
 
-#NautilusPathBar button.current-dir { border-width: 2px; color: #f9f06b; background-color: #93531c; border-left-color: #633813; border-top-color: #633813; border-right-color: #b88e6a; border-bottom-color: #b88e6a; }
+#NautilusPathBar button.current-dir, #NautilusPathBar #NautilusPathButton.current-dir { border-width: 2px; color: #f9f06b; background-color: #93531c; border-left-color: #633813; border-top-color: #633813; border-right-color: #b88e6a; border-bottom-color: #b88e6a; }
 
-#NautilusPathBar button.current-dir:hover { border-width: 2px; color: #f9f06b; background-color: #a85f20; border-left-color: #754216; border-top-color: #754216; border-right-color: #ca9e78; border-bottom-color: #ca9e78; }
+#NautilusPathBar button.current-dir:hover, #NautilusPathBar #NautilusPathButton.current-dir:hover { border-width: 2px; color: #f9f06b; background-color: #a85f20; border-left-color: #754216; border-top-color: #754216; border-right-color: #ca9e78; border-bottom-color: #ca9e78; }
 
-#NautilusPathBar button.current-dir label { font-weight: bold; }
+#NautilusPathBar button.current-dir label, #NautilusPathBar #NautilusPathButton.current-dir label { font-weight: bold; font-style: normal; }
 
 .nautilus-list-view listview > row { border-radius: 0px; margin: 0pX; }
 
@@ -1564,6 +1564,8 @@ XfdesktopIconView.view:active { text-shadow: none; color: #f9f06b; background-co
 .top-bar { background-color: #503e2f; color: #f9f06b; }
 
 .top-bar:backdrop { background-color: #606060; color: #ffffff; transition: none; }
+
+.character-list-scroll { color: #ffffff; background-color: #555555; }
 
 windowhandle > box { padding: 0; }
 
