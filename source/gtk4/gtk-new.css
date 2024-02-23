@@ -16,7 +16,7 @@ label:disabled > selection, label:disabled:selected, calendar > grid > label.day
 
 label:backdrop:selected, calendar > grid > label.day-number:backdrop:selected, row:backdrop:selected, columnview.view:backdrop:selected, treeview.view:backdrop:selected, modelbutton.flat:backdrop:selected, modelbutton.flat:backdrop:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop), modelbutton.flat:backdrop:focus:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop), .entry:backdrop:selected, gridview > child:backdrop:selected, flowbox > flowboxchild:backdrop:selected, .view:backdrop:selected, iconview:backdrop:selected, textview > text:backdrop:selected { color: #f9f06b; background-color: #93531c; }
 
-scale > trough > slider, switch > slider, scrollbar > range > trough > slider { background-image: radial-gradient(circle closest-side, currentColor, currentColor 90%, transparent); background-size: 4px, 4px; background-repeat: no-repeat; background-position: center; }
+scale > trough > slider, switch > slider, scrollbar > range > trough > slider { background-image: radial-gradient(circle closest-side, currentColor, currentColor 90%, transparent); background-size: 4px 4px; background-repeat: no-repeat; background-position: center; }
 
 splitbutton:disabled, tabbox > tabboxchild > tab:disabled:active, tabbox > tabboxchild > tab:disabled:selected, tabbox > tabboxchild > tab:disabled, cursor-handle:disabled, .osd scale > trough > slider:disabled, scale > trough > slider:disabled, .osd check:disabled, .osd radio:disabled, check:checked:disabled, check.view:checked:disabled, .view check:checked:disabled, radio:checked:disabled, radio.view:checked:disabled, .view radio:checked:disabled, check:disabled, check.view:disabled, .view check:disabled, radio:disabled, radio.view:disabled, .view radio:disabled, switch:disabled > slider, notebook > header tab:disabled, notebook.frame > header tab:disabled, windowcontrols button.minimize:disabled, windowcontrols button.maximize:disabled, windowcontrols button.close:disabled, infobar.error button:disabled, infobar.warning button:disabled, infobar.question button:disabled, infobar.info button:disabled, infobar button:disabled, .osd spinbutton.vertical > button:first-child:disabled, modelbutton.flat:disabled, headerbar splitbutton:backdrop:disabled:active, .topbar splitbutton:backdrop:disabled:active, headerbar splitbutton:backdrop:disabled:checked, .topbar splitbutton:backdrop:disabled:checked, headerbar button:backdrop:disabled:active, headerbar button:backdrop:disabled:checked, .topbar button:backdrop:disabled:active, .topbar button:backdrop:disabled:checked, headerbar splitbutton:backdrop:disabled, .topbar splitbutton:backdrop:disabled, headerbar button:backdrop:disabled, .topbar button:backdrop:disabled, headerbar splitbutton:disabled:active, .topbar splitbutton:disabled:active, headerbar splitbutton:disabled:checked, .topbar splitbutton:disabled:checked, headerbar button:disabled:active, headerbar button:disabled:checked, .topbar button:disabled:active, .topbar button:disabled:checked, headerbar splitbutton:disabled, .topbar splitbutton:disabled, headerbar button:disabled, .topbar button:disabled, .osd button.destructive-action:disabled, button.destructive-action:disabled:active, button.destructive-action:disabled:checked, button.destructive-action:disabled, .osd button.suggested-action:disabled, button.suggested-action:disabled:active, button.suggested-action:disabled:checked, button.suggested-action:disabled, .app-notification button.flat:disabled, .osd button.flat:disabled, .app-notification button:disabled, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled, .osd button:disabled, splitbutton:disabled:active, tabbox > tabboxchild > tab:disabled:active, notebook > header > tabs > arrow:disabled:active, notebook.frame > header > tabs > arrow:disabled:active, windowcontrols button:disabled:active, splitbutton:disabled:checked, tabbox > tabboxchild > tab:disabled:checked, notebook > header > tabs > arrow:disabled:checked, notebook.frame > header > tabs > arrow:disabled:checked, windowcontrols button:disabled:checked, button:disabled:active, button:disabled:checked, splitbutton:disabled, tabbox > tabboxchild > tab:disabled, notebook > header > tabs > arrow:disabled, notebook.frame > header > tabs > arrow:disabled, .nautilus-path-bar .path-buttons-box button:disabled, windowcontrols button:disabled, button:disabled, spinbutton.vertical > text:disabled, spinbutton:disabled:not(.vertical), entry:disabled { background-image: linear-gradient(45deg, alpha(currentColor,0.5) 10%, alpha(currentColor,0) 10%, alpha(currentColor,0) 50%, alpha(currentColor,0.5) 50%, alpha(currentColor,0.5) 60%, alpha(currentColor,0) 60%); background-size: 0.6em 0.6em; background-repeat: repeat; background-position: center; }
 
@@ -154,7 +154,7 @@ spinbutton.vertical > text > text > block-cursor, spinbutton:not(.vertical) > te
 
 spinbutton.vertical > text.flat, spinbutton.flat:not(.vertical), entry.flat:focus-within, entry.flat:backdrop, entry.flat:disabled, entry.flat { min-height: 0; padding-top: 2px; padding-bottom: 2px; background-color: transparent; border-color: transparent; border-radius: 0; }
 
-spinbutton.vertical > text:focus-within, spinbutton:focus-within:not(.vertical), entry:focus-within { background-color: #555555; border-left-color: #633813; border-top-color: #633813; border-right-color: #b88e6a; border-bottom-color: #b88e6a; }
+spinbutton.vertical > text:focus-within, spinbutton:focus-within:not(.vertical), entry:focus-within { background-color: #555555; border-left-color: #633813; border-top-color: #633813; border-right-color: #b88e6a; border-bottom-color: #b88e6a; box-shadow: inset 0 0 0 2px #93531c; }
 
 spinbutton.vertical > text:focus-within > placeholder, spinbutton:focus-within:not(.vertical) > placeholder, entry:focus-within > placeholder { opacity: 0; /* We hide placeholders on focus */ }
 
@@ -170,7 +170,7 @@ spinbutton.vertical > text.error, spinbutton.error:not(.vertical), entry.error {
 
 spinbutton.vertical > text.error:focus-within, spinbutton.error:focus-within:not(.vertical), entry.error:focus-within { outline-color: transparent; outline-width: 0; outline-offset: -2px; }
 
-spinbutton.vertical > text.error:focus-within, spinbutton.error:focus-within:not(.vertical), entry.error:focus-within { background-color: #555555; border-left-color: #8f0000; border-top-color: #8f0000; border-right-color: #e06666; border-bottom-color: #e06666; }
+spinbutton.vertical > text.error:focus-within, spinbutton.error:focus-within:not(.vertical), entry.error:focus-within { background-color: #555555; border-left-color: #8f0000; border-top-color: #8f0000; border-right-color: #e06666; border-bottom-color: #e06666; box-shadow: inset 0 0 0 2px #93531c; }
 
 spinbutton.vertical > text.error > selection, spinbutton.error:not(.vertical) > selection, entry.error > selection { background-color: #CC0000; }
 
@@ -180,7 +180,7 @@ spinbutton.vertical > text.success, spinbutton.success:not(.vertical), entry.suc
 
 spinbutton.vertical > text.success:focus-within, spinbutton.success:focus-within:not(.vertical), entry.success:focus-within { outline-color: transparent; outline-width: 0; outline-offset: -2px; }
 
-spinbutton.vertical > text.success:focus-within, spinbutton.success:focus-within:not(.vertical), entry.success:focus-within { background-color: #555555; border-left-color: #279e5c; border-top-color: #279e5c; border-right-color: #9be8be; border-bottom-color: #9be8be; }
+spinbutton.vertical > text.success:focus-within, spinbutton.success:focus-within:not(.vertical), entry.success:focus-within { background-color: #555555; border-left-color: #279e5c; border-top-color: #279e5c; border-right-color: #9be8be; border-bottom-color: #9be8be; box-shadow: inset 0 0 0 2px #93531c; }
 
 spinbutton.vertical > text.success > selection, spinbutton.success:not(.vertical) > selection, entry.success > selection { background-color: #33d17a; }
 
@@ -190,7 +190,7 @@ spinbutton.vertical > text.warning, spinbutton.warning:not(.vertical), entry.war
 
 spinbutton.vertical > text.warning:focus-within, spinbutton.warning:focus-within:not(.vertical), entry.warning:focus-within { outline-color: transparent; outline-width: 0; outline-offset: -2px; }
 
-spinbutton.vertical > text.warning:focus-within, spinbutton.warning:focus-within:not(.vertical), entry.warning:focus-within { background-color: #555555; border-left-color: #b55a00; border-top-color: #b55a00; border-right-color: #fab97b; border-bottom-color: #fab97b; }
+spinbutton.vertical > text.warning:focus-within, spinbutton.warning:focus-within:not(.vertical), entry.warning:focus-within { background-color: #555555; border-left-color: #b55a00; border-top-color: #b55a00; border-right-color: #fab97b; border-bottom-color: #fab97b; box-shadow: inset 0 0 0 2px #93531c; }
 
 spinbutton.vertical > text.warning > selection, spinbutton.warning:not(.vertical) > selection, entry.warning > selection { background-color: #f57900; }
 
@@ -206,13 +206,13 @@ spinbutton.vertical > text:drop(active), spinbutton:drop(active):not(.vertical),
 
 .osd spinbutton.vertical > text, .osd spinbutton:not(.vertical), .osd entry { color: #7dbf60; background-color: #555e55; border-left-color: #393f39; border-top-color: #393f39; border-right-color: #919791; border-bottom-color: #919791; }
 
-.osd spinbutton.vertical > text:focus-within, .osd spinbutton:focus-within:not(.vertical), .osd entry:focus-within { color: #7dbf60; background-color: #555e55; border-left-color: #633813; border-top-color: #633813; border-right-color: #b88e6a; border-bottom-color: #b88e6a; }
+.osd spinbutton.vertical > text:focus-within, .osd spinbutton:focus-within:not(.vertical), .osd entry:focus-within { color: #7dbf60; background-color: #555e55; border-left-color: #633813; border-top-color: #633813; border-right-color: #b88e6a; border-bottom-color: #b88e6a; box-shadow: inset 0 0 0 2px #93531c; }
 
 .osd spinbutton.vertical > text:disabled, .osd spinbutton:disabled:not(.vertical), .osd entry:disabled { color: #878787; background-color: #595959; border-left-color: #3c3c3c; border-top-color: #3c3c3c; border-right-color: #939393; border-bottom-color: #939393; }
 
-spinbutton.vertical > text > progress, spinbutton:not(.vertical) > progress, entry > progress { margin-bottom: 2px; }
+spinbutton.vertical > text > progress, spinbutton:not(.vertical) > progress, entry > progress { margin-bottom: 4px; }
 
-spinbutton.vertical > text progress > trough > progress, spinbutton:not(.vertical) progress > trough > progress, entry progress > trough > progress { background-color: transparent; background-image: none; border-radius: 0; border-width: 0 0 2px; border-color: #93531c; border-style: solid; box-shadow: none; }
+spinbutton.vertical > text progress > trough > progress, spinbutton:not(.vertical) progress > trough > progress, entry progress > trough > progress { background-color: transparent; background-image: none; border-radius: 0; border-width: 0 0 2px; border-color: #93531c; border-style: solid; box-shadow: none; margin-bottom: 1px; }
 
 spinbutton.vertical > text.error, spinbutton.error:not(.vertical), entry.error { color: #CC0000; }
 
@@ -991,6 +991,10 @@ notebook > header.bottom tab, notebook.frame > header.bottom tab { padding-top: 
 
 notebook > stack:not(:only-child), notebook.frame > stack:not(:only-child) { border: none; background-color: #5b5b5b; margin: 2px; }
 
+tab.reorderable-page, tabbox tab { background-image: radial-gradient(circle closest-side at 0.4em 0.4em, currentColor, currentColor 30%, alpha(currentColor,0) 33%); }
+
+tabthumbnail overlay.card > picture { border-radius: 0px; }
+
 notebook { transition-property: outline, outline-width, outline-offset, outline-color; transition-duration: 300ms; animation-timing-function: ease-in-out; }
 
 notebook > header > tabs > tab:checked { outline: 0 solid transparent; outline-offset: 4px; }
@@ -1641,7 +1645,7 @@ popover.emoji-picker > contents { padding: 0; }
 
 .emoji-toolbar { padding: 6px; border-spacing: 6px; border-top: 1px solid #474747; }
 
-button.emoji-section { border-color: transparent; border-width: 3px; border-style: none none solid; border-radius: 0; padding: 3px 0 0; min-width: 32px; min-height: 28px; border-width: 2px; border-color: transparent; background-color: transparent; background-image: none; text-shadow: none; -gtk-icon-shadow: none; }
+button.emoji-section { padding: 3px 0 0; min-width: 32px; min-height: 28px; }
 
 button.emoji-section:hover { border-width: 2px; background-color: #848484; border-left-color: #c3c3c3; border-top-color: #c3c3c3; border-right-color: #646464; border-bottom-color: #646464; }
 

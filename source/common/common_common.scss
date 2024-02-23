@@ -59,7 +59,7 @@ $popover_radius: $window_radius;
 
 %draggable {
     background-image: radial-gradient(circle closest-side, currentColor, currentColor 90%, transparent);
-    background-size: 2 * $border_width, 2 * $border_width;
+    background-size: (2 * $border_width) (2 * $border_width);
     background-repeat: no-repeat;
     background-position: center;
 }

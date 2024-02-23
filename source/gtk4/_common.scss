@@ -380,7 +380,7 @@ entry {
   }
 
   > progress {
-    margin-bottom: 2px;
+    margin-bottom: 4px;
   }
 
   progress > trough > progress {
@@ -391,6 +391,7 @@ entry {
     border-color: $selected_bg_color;
     border-style: solid;
     box-shadow: none;
+    margin-bottom: 1px;
 
   }
 
@@ -3749,16 +3750,16 @@ popover.emoji-picker > contents {
 }
 
 button.emoji-section {
-  border-color: transparent;
-  border-width: 3px;
-  border-style: none none solid;
-  border-radius: 0;
+//  border-color: transparent;
+//  border-width: 3px;
+//  border-style: none none solid;
+//  border-radius: 0;
 
   padding: 3px 0 0;
   min-width: 32px;
   min-height: 28px;
 
-  @include button(undecorated);
+  //@include button(undecorated);
 
   &:hover { @include button(hover); }
   &:checked { @include button(checked-active); }

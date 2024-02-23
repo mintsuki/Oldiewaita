@@ -9,7 +9,7 @@ label:disabled selection, .selection-mode button.titlebutton:disabled, label:dis
 
 .selection-mode button.titlebutton:backdrop, label:backdrop:selected, calendar:backdrop:selected, row:backdrop:selected, treeview.view:backdrop:selected, modelbutton.flat:backdrop:selected, .menuitem.button.flat:backdrop:selected, .entry:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, entry selection:backdrop, flowbox flowboxchild:backdrop:selected, .view text selection:backdrop, iconview text selection:backdrop, textview text selection:backdrop:focus, textview text selection:backdrop, .view:backdrop:selected, iconview:backdrop:selected, .view text:backdrop:selected, iconview text:backdrop:selected, textview text:backdrop:selected { color: #f9f06b; background-color: #93531c; }
 
-scale slider, switch slider, scrollbar slider { background-image: radial-gradient(circle closest-side, currentColor, currentColor 90%, transparent); background-size: 4px, 4px; background-repeat: no-repeat; background-position: center; }
+scale slider, switch slider, scrollbar slider { background-image: radial-gradient(circle closest-side, currentColor, currentColor 90%, transparent); background-size: 4px 4px; background-repeat: no-repeat; background-position: center; }
 
 cursor-handle:disabled, button.titlebutton.minimize:disabled, button.titlebutton.maximize:disabled, button.titlebutton.close:disabled, infobar.error button:disabled, infobar.warning button:disabled, infobar.question button:disabled, infobar.info button:disabled, infobar button:disabled, .osd scale slider:disabled, scale slider:disabled, .osd check:disabled, .osd radio:disabled, check:checked:disabled, check.view:checked:disabled, .view check:checked:disabled, radio:checked:disabled, radio.view:checked:disabled, .view radio:checked:disabled, check:disabled, check.view:disabled, .view check:disabled, radio:disabled, radio.view:disabled, .view radio:disabled, switch:disabled slider, notebook > header tab:disabled, notebook.frame > header tab:disabled, .selection-mode .titlebar:not(headerbar) button.suggested-action:disabled, .selection-mode.titlebar:not(headerbar) button.suggested-action:disabled, .selection-mode headerbar button.suggested-action:disabled, headerbar.selection-mode button.suggested-action:disabled, .selection-mode .titlebar:not(headerbar) button:disabled:active, .selection-mode .titlebar:not(headerbar) button:disabled:checked, .selection-mode.titlebar:not(headerbar) button:disabled:active, .selection-mode.titlebar:not(headerbar) button:disabled:checked, .selection-mode headerbar button:disabled:active, .selection-mode headerbar button:disabled:checked, headerbar.selection-mode button:disabled:active, headerbar.selection-mode button:disabled:checked, .selection-mode .titlebar:not(headerbar) button:disabled, .selection-mode.titlebar:not(headerbar) button:disabled, .selection-mode headerbar button:disabled, headerbar.selection-mode button:disabled, .osd spinbutton.vertical button:first-child:disabled, .inline-toolbar toolbutton > button:disabled:active, .inline-toolbar toolbutton > button:disabled:checked, .inline-toolbar toolbutton > button:disabled, headerbar calendar.button:backdrop:disabled:active, headerbar calendar.button:backdrop:disabled:checked, .topbar calendar.button:backdrop:disabled:active, .topbar calendar.button:backdrop:disabled:checked, headerbar button:backdrop:disabled:active, headerbar button:backdrop:disabled:checked, .topbar button:backdrop:disabled:active, .topbar button:backdrop:disabled:checked, headerbar calendar.button:backdrop:disabled, headerbar button:backdrop:disabled, .topbar button:backdrop:disabled, headerbar button:disabled:active, headerbar button:disabled:checked, .topbar button:disabled:active, .topbar button:disabled:checked, headerbar calendar.button:disabled, .topbar calendar.button:disabled, headerbar button:disabled, .topbar button:disabled, .osd calendar.destructive-action.button:disabled:backdrop, .osd calendar.destructive-action.button:disabled, .osd button.destructive-action:disabled:backdrop, .osd button.destructive-action:disabled, calendar.destructive-action.button:disabled:active, calendar.destructive-action.button:disabled:checked, button.destructive-action:disabled:active, button.destructive-action:disabled:checked, calendar.destructive-action.button:disabled, button.destructive-action:disabled, .osd calendar.suggested-action.button:disabled:backdrop, .osd calendar.suggested-action.button:disabled, .osd button.suggested-action:disabled:backdrop, .osd button.suggested-action:disabled, calendar.suggested-action.button:disabled:active, calendar.suggested-action.button:disabled:checked, button.suggested-action:disabled:active, button.suggested-action:disabled:checked, calendar.suggested-action.button:disabled, button.suggested-action:disabled, .app-notification button.flat:disabled, .app-notification.frame button.flat:disabled, .csd popover.background.touch-selection button.flat:disabled, .csd popover.background.magnifier button.flat:disabled, popover.background.touch-selection button.flat:disabled, popover.background.magnifier button.flat:disabled, .osd button.flat:disabled, .app-notification button:disabled, .app-notification.frame button:disabled, .csd popover.background.touch-selection button:disabled, .csd popover.background.magnifier button:disabled, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled, .osd calendar.button:disabled, .osd button:disabled, calendar.osd.button:disabled, button.osd:disabled, button.titlebutton:disabled:active, scrollbar slider:disabled:active, notebook > header > tabs > arrow:disabled:active, notebook.frame > header > tabs > arrow:disabled:active, .nautilus-path-bar .path-buttons-box button:disabled:active, button.titlebutton:disabled:checked, scrollbar slider:disabled:checked, notebook > header > tabs > arrow:disabled:checked, notebook.frame > header > tabs > arrow:disabled:checked, .nautilus-path-bar .path-buttons-box button:disabled:checked, calendar.button:disabled:active, calendar.button:disabled:checked, button:disabled:active, button:disabled:checked, button.titlebutton:disabled, scrollbar slider:disabled, notebook > header > tabs > arrow:disabled, notebook.frame > header > tabs > arrow:disabled, .nautilus-path-bar .path-buttons-box button:disabled, calendar.button:disabled, button:disabled, .osd spinbutton:disabled:not(.vertical), .osd entry:disabled, spinbutton:disabled:not(.vertical), entry:disabled { background-image: linear-gradient(45deg, alpha(currentColor,0.5) 10%, alpha(currentColor,0) 10%, alpha(currentColor,0) 50%, alpha(currentColor,0.5) 50%, alpha(currentColor,0.5) 60%, alpha(currentColor,0) 60%); background-size: 0.6em 0.6em; background-repeat: repeat; background-position: center; }
 
@@ -114,19 +114,19 @@ spinbutton:not(.vertical) image.right, entry image.right { margin-left: 6px; }
 
 spinbutton.flat:not(.vertical), entry.flat:focus, entry.flat:backdrop, entry.flat:disabled, entry.flat { min-height: 0; padding: 2px; padding-left: 1px; padding-right: 1px; background-color: transparent; border-color: transparent; border-radius: 0; }
 
-spinbutton:focus:not(.vertical), entry:focus { background-color: #555555; border-left-color: #633813; border-top-color: #633813; border-right-color: #b88e6a; border-bottom-color: #b88e6a; }
+spinbutton:focus:not(.vertical), entry:focus { background-color: #555555; border-left-color: #633813; border-top-color: #633813; border-right-color: #b88e6a; border-bottom-color: #b88e6a; box-shadow: inset 0 0 0 2px #93531c; }
 
 spinbutton:disabled:not(.vertical), entry:disabled { color: #878787; background-color: #595959; border-left-color: #3c3c3c; border-top-color: #3c3c3c; border-right-color: #939393; border-bottom-color: #939393; }
 
 spinbutton.error:not(.vertical), entry.error { color: #CC0000; border-color: #CC0000; }
 
-spinbutton.error:focus:not(.vertical), entry.error:focus { background-color: #555555; border-left-color: #8f0000; border-top-color: #8f0000; border-right-color: #e06666; border-bottom-color: #e06666; }
+spinbutton.error:focus:not(.vertical), entry.error:focus { background-color: #555555; border-left-color: #8f0000; border-top-color: #8f0000; border-right-color: #e06666; border-bottom-color: #e06666; box-shadow: inset 0 0 0 2px #93531c; }
 
 spinbutton.error:not(.vertical) selection, entry.error selection { background-color: #CC0000; }
 
 spinbutton.warning:not(.vertical), entry.warning { color: #f57900; border-color: #f57900; }
 
-spinbutton.warning:focus:not(.vertical), entry.warning:focus { background-color: #555555; border-left-color: #b55a00; border-top-color: #b55a00; border-right-color: #fab97b; border-bottom-color: #fab97b; }
+spinbutton.warning:focus:not(.vertical), entry.warning:focus { background-color: #555555; border-left-color: #b55a00; border-top-color: #b55a00; border-right-color: #fab97b; border-bottom-color: #fab97b; box-shadow: inset 0 0 0 2px #93531c; }
 
 spinbutton.warning:not(.vertical) selection, entry.warning selection { background-color: #f57900; }
 
@@ -140,11 +140,11 @@ spinbutton:drop(active):not(.vertical), entry:drop(active):focus, entry:drop(act
 
 .osd spinbutton:not(.vertical), .osd entry { color: #7dbf60; background-color: #555e55; border-left-color: #393f39; border-top-color: #393f39; border-right-color: #919791; border-bottom-color: #919791; }
 
-.osd spinbutton:focus:not(.vertical), .osd entry:focus { color: #7dbf60; background-color: #555e55; border-left-color: #633813; border-top-color: #633813; border-right-color: #b88e6a; border-bottom-color: #b88e6a; }
+.osd spinbutton:focus:not(.vertical), .osd entry:focus { color: #7dbf60; background-color: #555e55; border-left-color: #633813; border-top-color: #633813; border-right-color: #b88e6a; border-bottom-color: #b88e6a; box-shadow: inset 0 0 0 2px #93531c; }
 
 .osd spinbutton:disabled:not(.vertical), .osd entry:disabled { color: #878787; background-color: #595959; border-left-color: #3c3c3c; border-top-color: #3c3c3c; border-right-color: #939393; border-bottom-color: #939393; }
 
-spinbutton:not(.vertical) progress, entry progress { margin: 2px 2px; background-color: transparent; background-image: none; border-radius: 0; border-width: 0 0 2px; border-color: #93531c; border-style: solid; box-shadow: none; }
+spinbutton:not(.vertical) progress, entry progress { margin: 3px 3px; background-color: transparent; background-image: none; border-radius: 0; border-width: 0 0 2px; border-color: #93531c; border-style: solid; box-shadow: none; }
 
 spinbutton:not(.vertical) progress:backdrop, entry progress:backdrop { background-color: transparent; }
 
@@ -835,6 +835,10 @@ notebook > header.bottom tab, notebook.frame > header.bottom tab { padding-top: 
 
 notebook > stack:not(:only-child), notebook.frame > stack:not(:only-child) { border: none; background-color: #5b5b5b; margin: 2px; }
 
+tab.reorderable-page, tabbox tab { background-image: radial-gradient(circle closest-side at 0.4em 0.4em, currentColor, currentColor 30%, alpha(currentColor,0) 33%); }
+
+tabthumbnail overlay.card > picture { border-radius: 0px; }
+
 /************** Scrollbars * */
 scrollbar { border: 2px solid; background-color: #5b5b5b; border-left-color: #3e3e3e; border-top-color: #3e3e3e; border-right-color: #969696; border-bottom-color: #969696; transition: none; }
 
@@ -1501,7 +1505,7 @@ popover.emoji-picker { padding-left: 0; padding-right: 0; }
 
 popover.emoji-picker entry.search { margin: 3px 5px 5px 5px; }
 
-button.emoji-section { border-width: 2px; border-style: solid; border-radius: 0; margin: 2px 4px 2px 4px; padding: 3px 0 0; min-width: 32px; min-height: 28px; border-width: 2px; border-color: transparent; background-color: transparent; background-image: none; text-shadow: none; -gtk-icon-shadow: none; outline-offset: -5px; }
+button.emoji-section { border-width: 2px; border-style: solid; border-radius: 0; margin: 2px 4px 2px 4px; padding: 3px 0 0; min-width: 32px; min-height: 28px; outline-offset: -5px; }
 
 button.emoji-section:first-child { margin-left: 7px; }
 

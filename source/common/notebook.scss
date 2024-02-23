@@ -176,7 +176,7 @@ notebook, notebook.frame {
       @include relief($base_color);
       margin: 0px;
       
-  
+      
 
       &:hover {
         color: $fg_color;
@@ -246,7 +246,7 @@ notebook, notebook.frame {
           margin-left: 2px;
           margin-right: 2px;
 
-          //&.reorderable-page { border-style: none solid; }
+          
         }
       }
     }
@@ -287,4 +287,17 @@ notebook, notebook.frame {
 
     //&:backdrop { background-color: $backdrop_base_color; }
   }
+}
+
+// outside because of libadwaita:
+
+tab.reorderable-page, tabbox tab  { 
+    background-image: radial-gradient(circle closest-side at 0.4em 0.4em, currentColor, currentColor 30%, gtkalpha(currentColor, 0) 33%);
+    //on :dir(rtl), how to tell it to be from the right? Not sure gtk css allows that :/
+}
+
+//other libadwaita things:
+
+tabthumbnail overlay.card > picture {
+    border-radius: $button_radius;
 }
