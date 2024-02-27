@@ -9,8 +9,7 @@
 	<description>Simplewaita, based on The Fugitive Metacity Theme (squared version)</description>
 </info>
 
-<!-- clearlooks blue: #669900 -->
-<!-- Simplewaita green: #669900 -->
+<!-- Oldiewaita titlebar brown: #503e2f -->
 
 
 
@@ -104,14 +103,14 @@
 <!--background color-->
 <draw_ops name="bg_color_titlebar_normal_focused">
 	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
-		<color value="shade/#669900/1.01"/>
-		<color value="shade/#669900/0.93"/>
-		<color value="shade/#669900/0.92"/>
-		<color value="shade/#669900/1.01"/>
+		<color value="shade/#503e2f/1.01"/>
+		<color value="shade/#503e2f/0.93"/>
+		<color value="shade/#503e2f/0.92"/>
+		<color value="shade/#503e2f/1.01"/>
 	</gradient>
 
 	<!--simple color instead of gradient-->
-	<!--<rectangle color="#669900" filled="true" 
+	<!--<rectangle color="#503e2f" filled="true" 
 		x="0" y="0" width="width" height="top_height"/>-->
 </draw_ops>
 <draw_ops name="bg_color_titlebar_normal_unfocused">
@@ -128,13 +127,13 @@
 </draw_ops>
 
 <draw_ops name="bg_color_border_normal_focused">
-	<rectangle color="#669900" filled="true" 
+	<rectangle color="#503e2f" filled="true" 
 		x="0" y="top_height" 
 		width="left_width" height="height-top_height-bottom_height"/>
-	<rectangle color="#669900" filled="true" 
+	<rectangle color="#503e2f" filled="true" 
 		x="width-right_width" y="top_height" 
 		width="right_width" height="height-top_height-bottom_height"/>
-	<rectangle color="#669900" filled="true" 
+	<rectangle color="#503e2f" filled="true" 
 		x="0" y="height-bottom_height" 
 		width="width" height="bottom_height"/>
 </draw_ops>
@@ -151,7 +150,7 @@
 </draw_ops>
 
 <draw_ops name="bg_color_border_border_focused">
-	<rectangle color="#669900" filled="true" 
+	<rectangle color="#503e2f" filled="true" 
 		x="0" y="0" width="width" height="top_height"/>
 	<include name="bg_color_border_normal_focused"/>
 </draw_ops>
@@ -164,11 +163,11 @@
 
 <!--outer window borders-->
 <draw_ops name="borders_outer_normal_focused">
-	<rectangle color="shade/#669900/0.70" filled="false" 
+	<rectangle color="shade/#503e2f/0.70" filled="false" 
 		x="0" y="0" width="width-1" height="height-1"/>
-	<rectangle color="shade/#669900/0.85" filled="false" 
+	<rectangle color="shade/#503e2f/0.85" filled="false" 
 		x="1" y="1" width="width-3" height="height-3"/>
-	<rectangle color="shade/#669900/0.95" filled="false" 
+	<rectangle color="shade/#503e2f/0.95" filled="false" 
 		x="2" y="2" width="width-5" height="height-5"/>
 </draw_ops>
 <draw_ops name="borders_outer_normal_unfocused">
@@ -181,9 +180,9 @@
 </draw_ops>
 
 <draw_ops name="borders_outer_maximized_focused">
-	<line color="shade/#669900/0.70" x1="0" y1="0" x2="width-1" y2="0"/>
-	<line color="shade/#669900/0.85" x1="0" y1="1" x2="width-1" y2="1"/>
-	<line color="shade/#669900/0.95" x1="0" y1="2" x2="width-1" y2="2"/>
+	<line color="shade/#503e2f/0.70" x1="0" y1="0" x2="width-1" y2="0"/>
+	<line color="shade/#503e2f/0.85" x1="0" y1="1" x2="width-1" y2="1"/>
+	<line color="shade/#503e2f/0.95" x1="0" y1="2" x2="width-1" y2="2"/>
 </draw_ops>
 <draw_ops name="borders_outer_maximized_unfocused">
 	<line color="shade/gtk:bg[NORMAL]/0.70" x1="0" y1="0" x2="width-1" y2="0"/>
@@ -192,9 +191,9 @@
 </draw_ops>
 
 <draw_ops name="borders_outer_utility_focused">
-	<rectangle color="shade/#669900/0.80" filled="false" x="0" y="0" 
+	<rectangle color="shade/#503e2f/0.80" filled="false" x="0" y="0" 
 		width="width-1" height="height-1"/>
-	<rectangle color="shade/#669900/0.90" filled="false" x="1" y="1" 
+	<rectangle color="shade/#503e2f/0.90" filled="false" x="1" y="1" 
 		width="width-3" height="height-3"/>
 </draw_ops>
 <draw_ops name="borders_outer_utility_unfocused">
@@ -207,15 +206,15 @@
 
 <!--inner window borders-->
 <draw_ops name="borders_inner_normal_focused">
-	<rectangle color="shade/#669900/0.95" filled="false" 
+	<rectangle color="shade/#503e2f/0.95" filled="false" 
 		x="left_width-3" y="top_height-3" 
 		width="width-left_width-right_width+5" 
 		height="height-top_height-bottom_height+5"/>
-	<rectangle color="shade/#669900/0.85" filled="false" 
+	<rectangle color="shade/#503e2f/0.85" filled="false" 
 		x="left_width-2" y="top_height-2" 
 		width="width-left_width-right_width+3" 
 		height="height-top_height-bottom_height+3"/>
-	<rectangle color="shade/#669900/0.70" filled="false" 
+	<rectangle color="shade/#503e2f/0.70" filled="false" 
 		x="left_width-1" y="top_height-1" 
 		width="width-left_width-right_width+1" 
 		height="height-top_height-bottom_height+1"/>
@@ -236,11 +235,11 @@
 </draw_ops>
 
 <draw_ops name="borders_inner_maximized_focused">
-	<line color="shade/#669900/0.95" 
+	<line color="shade/#503e2f/0.95" 
 		x1="0" y1="top_height-3" x2="width-1" y2="top_height-3"/>
-	<line color="shade/#669900/0.85" 
+	<line color="shade/#503e2f/0.85" 
 		x1="0" y1="top_height-2" x2="width-1" y2="top_height-2"/>
-	<line color="shade/#669900/0.70" 
+	<line color="shade/#503e2f/0.70" 
 		x1="0" y1="top_height-1" x2="width-1" y2="top_height-1"/>
 </draw_ops>
 <draw_ops name="borders_inner_maximized_unfocused">
@@ -253,11 +252,11 @@
 </draw_ops>
 
 <draw_ops name="borders_inner_utility_focused">
-	<rectangle color="shade/#669900/0.90" filled="false" 
+	<rectangle color="shade/#503e2f/0.90" filled="false" 
 		x="left_width-2" y="top_height-2" 
 		width="width-left_width-right_width+3" 
 		height="height-top_height-bottom_height+3"/>
-	<rectangle color="shade/#669900/0.80" filled="false" 
+	<rectangle color="shade/#503e2f/0.80" filled="false" 
 		x="left_width-1" y="top_height-1" 
 		width="width-left_width-right_width+1" 
 		height="height-top_height-bottom_height+1"/>
@@ -279,28 +278,28 @@
 <!--rounded corners (normal)-->
 <draw_ops name="rounded_corners_top_normal_focused">
 	<!--top left-->
-	<line color="shade/#669900/0.70" x1="3" y1="1" x2="4" y2="1"/>
-	<line color="shade/#669900/0.70" x1="1" y1="3" x2="1" y2="4"/>
-	<line color="shade/#669900/0.70" x1="2" y1="2" x2="2" y2="2"/>
+	<line color="shade/#503e2f/0.70" x1="3" y1="1" x2="4" y2="1"/>
+	<line color="shade/#503e2f/0.70" x1="1" y1="3" x2="1" y2="4"/>
+	<line color="shade/#503e2f/0.70" x1="2" y1="2" x2="2" y2="2"/>
 
-	<line color="shade/#669900/0.85" x1="3" y1="2" x2="4" y2="2"/>
-	<line color="shade/#669900/0.85" x1="2" y1="3" x2="2" y2="4"/>
-	<line color="shade/#669900/0.85" x1="3" y1="3" x2="3" y2="3"/>
+	<line color="shade/#503e2f/0.85" x1="3" y1="2" x2="4" y2="2"/>
+	<line color="shade/#503e2f/0.85" x1="2" y1="3" x2="2" y2="4"/>
+	<line color="shade/#503e2f/0.85" x1="3" y1="3" x2="3" y2="3"/>
 
-	<line color="shade/#669900/0.95" x1="4" y1="3" x2="4" y2="3"/>
-	<line color="shade/#669900/0.95" x1="3" y1="4" x2="3" y2="4"/>
+	<line color="shade/#503e2f/0.95" x1="4" y1="3" x2="4" y2="3"/>
+	<line color="shade/#503e2f/0.95" x1="3" y1="4" x2="3" y2="4"/>
 
 	<!--top right-->
-	<line color="shade/#669900/0.70" x1="width-5" y1="1" x2="width-4" y2="1"/>
-	<line color="shade/#669900/0.70" x1="width-2" y1="3" x2="width-2" y2="4"/>
-	<line color="shade/#669900/0.70" x1="width-3" y1="2" x2="width-3" y2="2"/>
+	<line color="shade/#503e2f/0.70" x1="width-5" y1="1" x2="width-4" y2="1"/>
+	<line color="shade/#503e2f/0.70" x1="width-2" y1="3" x2="width-2" y2="4"/>
+	<line color="shade/#503e2f/0.70" x1="width-3" y1="2" x2="width-3" y2="2"/>
 
-	<line color="shade/#669900/0.85" x1="width-5" y1="2" x2="width-4" y2="2"/>
-	<line color="shade/#669900/0.85" x1="width-3" y1="3" x2="width-3" y2="4"/>
-	<line color="shade/#669900/0.85" x1="width-4" y1="3" x2="width-4" y2="3"/>
+	<line color="shade/#503e2f/0.85" x1="width-5" y1="2" x2="width-4" y2="2"/>
+	<line color="shade/#503e2f/0.85" x1="width-3" y1="3" x2="width-3" y2="4"/>
+	<line color="shade/#503e2f/0.85" x1="width-4" y1="3" x2="width-4" y2="3"/>
 
-	<line color="shade/#669900/0.95" x1="width-5" y1="3" x2="width-5" y2="3"/>
-	<line color="shade/#669900/0.95" x1="width-4" y1="4" x2="width-4" y2="4"/>
+	<line color="shade/#503e2f/0.95" x1="width-5" y1="3" x2="width-5" y2="3"/>
+	<line color="shade/#503e2f/0.95" x1="width-4" y1="4" x2="width-4" y2="4"/>
 </draw_ops>
 <draw_ops name="rounded_corners_top_normal_unfocused">
 	<!--top left-->
@@ -330,28 +329,28 @@
 
 <draw_ops name="rounded_corners_bottom_normal_focused">
 	<!--bottom left-->
-	<line color="shade/#669900/0.70" x1="3" y1="height-2" x2="4" y2="height-2"/>
-	<line color="shade/#669900/0.70" x1="1" y1="height-5" x2="1" y2="height-4"/>
-	<line color="shade/#669900/0.70" x1="2" y1="height-3" x2="2" y2="height-3"/>
+	<line color="shade/#503e2f/0.70" x1="3" y1="height-2" x2="4" y2="height-2"/>
+	<line color="shade/#503e2f/0.70" x1="1" y1="height-5" x2="1" y2="height-4"/>
+	<line color="shade/#503e2f/0.70" x1="2" y1="height-3" x2="2" y2="height-3"/>
 
-	<line color="shade/#669900/0.85" x1="3" y1="height-3" x2="4" y2="height-3"/>
-	<line color="shade/#669900/0.85" x1="2" y1="height-5" x2="2" y2="height-4"/>
-	<line color="shade/#669900/0.85" x1="3" y1="height-4" x2="3" y2="height-4"/>
+	<line color="shade/#503e2f/0.85" x1="3" y1="height-3" x2="4" y2="height-3"/>
+	<line color="shade/#503e2f/0.85" x1="2" y1="height-5" x2="2" y2="height-4"/>
+	<line color="shade/#503e2f/0.85" x1="3" y1="height-4" x2="3" y2="height-4"/>
 
-	<line color="shade/#669900/0.95" x1="4" y1="height-4" x2="4" y2="height-4"/>
-	<line color="shade/#669900/0.95" x1="3" y1="height-5" x2="3" y2="height-5"/>
+	<line color="shade/#503e2f/0.95" x1="4" y1="height-4" x2="4" y2="height-4"/>
+	<line color="shade/#503e2f/0.95" x1="3" y1="height-5" x2="3" y2="height-5"/>
 
 	<!--bottom right-->
-	<line color="shade/#669900/0.70" x1="width-5" y1="height-2" x2="width-4" y2="height-2"/>
-	<line color="shade/#669900/0.70" x1="width-2" y1="height-5" x2="width-2" y2="height-4"/>
-	<line color="shade/#669900/0.70" x1="width-3" y1="height-3" x2="width-3" y2="height-3"/>
+	<line color="shade/#503e2f/0.70" x1="width-5" y1="height-2" x2="width-4" y2="height-2"/>
+	<line color="shade/#503e2f/0.70" x1="width-2" y1="height-5" x2="width-2" y2="height-4"/>
+	<line color="shade/#503e2f/0.70" x1="width-3" y1="height-3" x2="width-3" y2="height-3"/>
 
-	<line color="shade/#669900/0.85" x1="width-5" y1="height-3" x2="width-4" y2="height-3"/>
-	<line color="shade/#669900/0.85" x1="width-3" y1="height-5" x2="width-3" y2="height-4"/>
-	<line color="shade/#669900/0.85" x1="width-4" y1="height-4" x2="width-4" y2="height-4"/>
+	<line color="shade/#503e2f/0.85" x1="width-5" y1="height-3" x2="width-4" y2="height-3"/>
+	<line color="shade/#503e2f/0.85" x1="width-3" y1="height-5" x2="width-3" y2="height-4"/>
+	<line color="shade/#503e2f/0.85" x1="width-4" y1="height-4" x2="width-4" y2="height-4"/>
 
-	<line color="shade/#669900/0.95" x1="width-5" y1="height-4" x2="width-5" y2="height-4"/>
-	<line color="shade/#669900/0.95" x1="width-4" y1="height-5" x2="width-4" y2="height-5"/>
+	<line color="shade/#503e2f/0.95" x1="width-5" y1="height-4" x2="width-5" y2="height-4"/>
+	<line color="shade/#503e2f/0.95" x1="width-4" y1="height-5" x2="width-4" y2="height-5"/>
 </draw_ops>
 <draw_ops name="rounded_corners_bottom_normal_unfocused">
 	<!--bottom left-->
@@ -382,22 +381,22 @@
 <!--rounded corners (utility)-->
 <draw_ops name="rounded_corners_top_utility_focused">
 	<!--top left-->
-	<line color="shade/#669900/0.80" x1="3" y1="1" x2="4" y2="1"/>
-	<line color="shade/#669900/0.80" x1="1" y1="3" x2="1" y2="4"/>
-	<line color="shade/#669900/0.80" x1="2" y1="2" x2="2" y2="2"/>
+	<line color="shade/#503e2f/0.80" x1="3" y1="1" x2="4" y2="1"/>
+	<line color="shade/#503e2f/0.80" x1="1" y1="3" x2="1" y2="4"/>
+	<line color="shade/#503e2f/0.80" x1="2" y1="2" x2="2" y2="2"/>
 
-	<line color="shade/#669900/0.90" x1="3" y1="2" x2="4" y2="2"/>
-	<line color="shade/#669900/0.90" x1="2" y1="3" x2="2" y2="4"/>
-	<line color="shade/#669900/0.90" x1="3" y1="3" x2="3" y2="3"/>
+	<line color="shade/#503e2f/0.90" x1="3" y1="2" x2="4" y2="2"/>
+	<line color="shade/#503e2f/0.90" x1="2" y1="3" x2="2" y2="4"/>
+	<line color="shade/#503e2f/0.90" x1="3" y1="3" x2="3" y2="3"/>
 
 	<!--top right-->
-	<line color="shade/#669900/0.80" x1="width-5" y1="1" x2="width-4" y2="1"/>
-	<line color="shade/#669900/0.80" x1="width-2" y1="3" x2="width-2" y2="4"/>
-	<line color="shade/#669900/0.80" x1="width-3" y1="2" x2="width-3" y2="2"/>
+	<line color="shade/#503e2f/0.80" x1="width-5" y1="1" x2="width-4" y2="1"/>
+	<line color="shade/#503e2f/0.80" x1="width-2" y1="3" x2="width-2" y2="4"/>
+	<line color="shade/#503e2f/0.80" x1="width-3" y1="2" x2="width-3" y2="2"/>
 
-	<line color="shade/#669900/0.90" x1="width-5" y1="2" x2="width-4" y2="2"/>
-	<line color="shade/#669900/0.90" x1="width-3" y1="3" x2="width-3" y2="4"/>
-	<line color="shade/#669900/0.90" x1="width-4" y1="3" x2="width-4" y2="3"/>
+	<line color="shade/#503e2f/0.90" x1="width-5" y1="2" x2="width-4" y2="2"/>
+	<line color="shade/#503e2f/0.90" x1="width-3" y1="3" x2="width-3" y2="4"/>
+	<line color="shade/#503e2f/0.90" x1="width-4" y1="3" x2="width-4" y2="3"/>
 </draw_ops>
 <draw_ops name="rounded_corners_top_utility_unfocused">
 	<!--top left-->
@@ -421,22 +420,22 @@
 
 <draw_ops name="rounded_corners_bottom_utility_focused">
 	<!--bottom left-->
-	<line color="shade/#669900/0.80" x1="3" y1="height-2" x2="4" y2="height-2"/>
-	<line color="shade/#669900/0.80" x1="1" y1="height-5" x2="1" y2="height-4"/>
-	<line color="shade/#669900/0.80" x1="2" y1="height-3" x2="2" y2="height-3"/>
+	<line color="shade/#503e2f/0.80" x1="3" y1="height-2" x2="4" y2="height-2"/>
+	<line color="shade/#503e2f/0.80" x1="1" y1="height-5" x2="1" y2="height-4"/>
+	<line color="shade/#503e2f/0.80" x1="2" y1="height-3" x2="2" y2="height-3"/>
 
-	<line color="shade/#669900/0.90" x1="3" y1="height-3" x2="4" y2="height-3"/>
-	<line color="shade/#669900/0.90" x1="2" y1="height-5" x2="2" y2="height-4"/>
-	<line color="shade/#669900/0.90" x1="3" y1="height-4" x2="3" y2="height-4"/>
+	<line color="shade/#503e2f/0.90" x1="3" y1="height-3" x2="4" y2="height-3"/>
+	<line color="shade/#503e2f/0.90" x1="2" y1="height-5" x2="2" y2="height-4"/>
+	<line color="shade/#503e2f/0.90" x1="3" y1="height-4" x2="3" y2="height-4"/>
 
 	<!--bottom right-->
-	<line color="shade/#669900/0.80" x1="width-5" y1="height-2" x2="width-4" y2="height-2"/>
-	<line color="shade/#669900/0.80" x1="width-2" y1="height-5" x2="width-2" y2="height-4"/>
-	<line color="shade/#669900/0.80" x1="width-3" y1="height-3" x2="width-3" y2="height-3"/>
+	<line color="shade/#503e2f/0.80" x1="width-5" y1="height-2" x2="width-4" y2="height-2"/>
+	<line color="shade/#503e2f/0.80" x1="width-2" y1="height-5" x2="width-2" y2="height-4"/>
+	<line color="shade/#503e2f/0.80" x1="width-3" y1="height-3" x2="width-3" y2="height-3"/>
 
-	<line color="shade/#669900/0.90" x1="width-5" y1="height-3" x2="width-4" y2="height-3"/>
-	<line color="shade/#669900/0.90" x1="width-3" y1="height-5" x2="width-3" y2="height-4"/>
-	<line color="shade/#669900/0.90" x1="width-4" y1="height-4" x2="width-4" y2="height-4"/>
+	<line color="shade/#503e2f/0.90" x1="width-5" y1="height-3" x2="width-4" y2="height-3"/>
+	<line color="shade/#503e2f/0.90" x1="width-3" y1="height-5" x2="width-3" y2="height-4"/>
+	<line color="shade/#503e2f/0.90" x1="width-4" y1="height-4" x2="width-4" y2="height-4"/>
 </draw_ops>
 <draw_ops name="rounded_corners_bottom_utility_unfocused">
 	<!--bottom left-->
@@ -503,7 +502,7 @@
 	<include name="bg_color_titlebar_normal_focused"/>
 	<include name="borders_outer_maximized_focused"/>
 	<include name="borders_inner_maximized_focused"/>
-	<line color="shade/#669900/0.70" x1="0" y1="height-1" x2="width-1" y2="height-1"/>
+	<line color="shade/#503e2f/0.70" x1="0" y1="height-1" x2="width-1" y2="height-1"/>
 </draw_ops>
 <draw_ops name="frame_maximized_unfocused">
 	<include name="bg_color_titlebar_normal_unfocused"/>
@@ -559,11 +558,11 @@
 <!--button backgrounds-->
 <!--button background borders-->
 <draw_ops name="button_bg_border_focused">
-	<rectangle color="shade/#669900/1.02" filled="false" 
+	<rectangle color="shade/#503e2f/1.02" filled="false" 
 		x="0" y="0" width="width-1" height="height-1"/>
-	<rectangle color="blend/#000000/#669900/0.74" filled="false" 
+	<rectangle color="blend/#000000/#503e2f/0.74" filled="false" 
 		x="1" y="1" width="width-3" height="height-3"/>
-	<rectangle color="shade/#669900/1.14" filled="false" 
+	<rectangle color="shade/#503e2f/1.14" filled="false" 
 		x="2" y="2" width="width-5" height="height-5"/>
 </draw_ops>
 <draw_ops name="button_bg_border_unfocused">
@@ -576,9 +575,9 @@
 </draw_ops>
 
 <draw_ops name="button_bg_red_border">
-	<rectangle color="shade/#669900/1.02" filled="false" 
+	<rectangle color="shade/#503e2f/1.02" filled="false" 
 		x="0" y="0" width="width-1" height="height-1"/>
-	<rectangle color="blend/#000000/#669900/0.74" filled="false" 
+	<rectangle color="blend/#000000/#503e2f/0.74" filled="false" 
 		x="1" y="1" width="width-3" height="height-3"/>
 	<rectangle color="shade/#C92843/1.14" filled="false" 
 		x="2" y="2" width="width-5" height="height-5"/>
@@ -588,14 +587,14 @@
 <!--button background gradients-->
 <draw_ops name="button_bg_gradient_focused">
 	<gradient type="vertical" x="3" y="3" width="width-6" height="height-6">
-		<color value="shade/#669900/0.95"/>
-		<color value="shade/#669900/1.25"/>
+		<color value="shade/#503e2f/0.95"/>
+		<color value="shade/#503e2f/1.25"/>
 	</gradient>
 </draw_ops>
 <draw_ops name="button_bg_gradient_focused_prelight">
 	<gradient type="vertical" x="3" y="3" width="width-6" height="height-6">
-		<color value="shade/#669900/1.25"/>
-		<color value="shade/#669900/0.95"/>
+		<color value="shade/#503e2f/1.25"/>
+		<color value="shade/#503e2f/0.95"/>
 	</gradient>
 </draw_ops>
 
@@ -954,10 +953,10 @@
 </draw_ops>
 
 <draw_ops name="button_icon_maximize_focused">
-	<rectangle color="#669900" filled="false" 
+	<rectangle color="#503e2f" filled="false" 
 		x="0" y="0" width="width-1" height="height-1"/>
 
-	<rectangle color="#669900" filled="false" 
+	<rectangle color="#503e2f" filled="false" 
 		x="1+(1`max`(3`min`height/8-1))" 
 		y="1+(2`max`height/4)" 
 		width="width-3-2*(1`max`(3`min`height/8-1))" 
@@ -980,28 +979,28 @@
 		width="width-2" height="1`max`(3`min`height/8-1)"/>
 </draw_ops>
 <draw_ops name="button_icon_maximize_focused_pressed">
-	<rectangle color="#669900" filled="false" 
+	<rectangle color="#503e2f" filled="false" 
 		x="0" y="0" width="width-1" height="height-1"/>
 
-	<rectangle color="#669900" filled="false" 
+	<rectangle color="#503e2f" filled="false" 
 		x="1+(1`max`(3`min`height/8-1))" 
 		y="1+(2`max`height/4)" 
 		width="width-3-2*(1`max`(3`min`height/8-1))" 
 		height="height-3-(2`max`height/4)-(1`max`(3`min`height/8-1))"/>
 
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="1" y="1" width="width-2" height="2`max`height/4"/>
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="1" 
 		y="1+(2`max`height/4)" 
 		width="1`max`(3`min`height/8-1)" 
 		height="height-2-(2`max`height/4)-(1`max`(3`min`height/8-1))"/>
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="width-1-(1`max`(3`min`height/8-1))" 
 		y="1+(2`max`height/4)" 
 		width="1`max`(3`min`height/8-1)" 
 		height="height-2-(2`max`height/4)-(1`max`(3`min`height/8-1))"/>
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="1" y="height-1-(1`max`(3`min`height/8-1))" 
 		width="width-2" height="1`max`(3`min`height/8-1)"/>
 </draw_ops>
@@ -1061,25 +1060,25 @@
 <draw_ops name="button_icon_restore_focused">
 	<!--back window-->
 	<!--upper horizontal-->
-	<line color="#669900" x1="width/3" y1="0" x2="width-1" y2="0"/>
+	<line color="#503e2f" x1="width/3" y1="0" x2="width-1" y2="0"/>
 	<!--left vertical-->
-	<line color="#669900" x1="width/3" y1="1" x2="width/3" y2="height/3-1"/>
+	<line color="#503e2f" x1="width/3" y1="1" x2="width/3" y2="height/3-1"/>
 	<!--right vertical-->
-	<line color="#669900" x1="width-1" y1="1" x2="width-1" y2="height-height/3-2"/>
+	<line color="#503e2f" x1="width-1" y1="1" x2="width-1" y2="height-height/3-2"/>
 	<!--bottom horizontal-->
-	<line color="#669900" 
+	<line color="#503e2f" 
 		x1="width-width/3" y1="height-height/3-1" x2="width-1" y2="height-height/3-1"/>
 
-	<line color="#669900" 
+	<line color="#503e2f" 
 		x1="width/3+1+(1`max`(3`min`height/8-1))" y1="1+(2`max`height/4-1)" 
 		x2="width-2-(1`max`(3`min`height/8-1))" y2="1+(2`max`height/4-1)"/>
-	<line color="#669900" 
+	<line color="#503e2f" 
 		x1="width/3+1+(1`max`(3`min`height/8-1))" y1="1+(2`max`height/4-1)" 
 		x2="width/3+1+(1`max`(3`min`height/8-1))" y2="height/3-1"/>
-	<line color="#669900" 
+	<line color="#503e2f" 
 		x1="width-2-(1`max`(3`min`height/8-1))" y1="2+(2`max`height/4-1)" 
 		x2="width-2-(1`max`(3`min`height/8-1))" y2="height-height/3-3-(1`max`(3`min`height/8-1))"/>
-	<line color="#669900" 
+	<line color="#503e2f" 
 		x1="width-width/3" y1="height-height/3-2-(1`max`(3`min`height/8-1))" 
 		x2="width-2-(1`max`(3`min`height/8-1))" y2="height-height/3-2-(1`max`(3`min`height/8-1))"/>
 
@@ -1098,9 +1097,9 @@
 		width="width/3-1" height="1`max`(3`min`height/8-1)"/>
 
 	<!--front window-->
-	<rectangle color="#669900" filled="false" 
+	<rectangle color="#503e2f" filled="false" 
 		x="0" y="height/3" width="width-width/3-1" height="height-height/3-1"/>
-	<rectangle color="#669900" filled="false" 
+	<rectangle color="#503e2f" filled="false" 
 		x="1+(1`max`(3`min`height/8-1))" 
 		y="height/3+1+(2`max`height/4-1)" 
 		width="width-width/3-3-2*(1`max`(3`min`height/8-1))" 
@@ -1125,64 +1124,64 @@
 <draw_ops name="button_icon_restore_focused_pressed">
 	<!--back window-->
 	<!--upper horizontal-->
-	<line color="#669900" x1="width/3" y1="0" x2="width-1" y2="0"/>
+	<line color="#503e2f" x1="width/3" y1="0" x2="width-1" y2="0"/>
 	<!--left vertical-->
-	<line color="#669900" x1="width/3" y1="1" x2="width/3" y2="height/3-1"/>
+	<line color="#503e2f" x1="width/3" y1="1" x2="width/3" y2="height/3-1"/>
 	<!--right vertical-->
-	<line color="#669900" x1="width-1" y1="1" x2="width-1" y2="height-height/3-2"/>
+	<line color="#503e2f" x1="width-1" y1="1" x2="width-1" y2="height-height/3-2"/>
 	<!--bottom horizontal-->
-	<line color="#669900" 
+	<line color="#503e2f" 
 		x1="width-width/3" y1="height-height/3-1" x2="width-1" y2="height-height/3-1"/>
 
-	<line color="#669900" 
+	<line color="#503e2f" 
 		x1="width/3+1+(1`max`(3`min`height/8-1))" y1="1+(2`max`height/4-1)" 
 		x2="width-2-(1`max`(3`min`height/8-1))" y2="1+(2`max`height/4-1)"/>
-	<line color="#669900" 
+	<line color="#503e2f" 
 		x1="width/3+1+(1`max`(3`min`height/8-1))" y1="1+(2`max`height/4-1)" 
 		x2="width/3+1+(1`max`(3`min`height/8-1))" y2="height/3-1"/>
-	<line color="#669900" 
+	<line color="#503e2f" 
 		x1="width-2-(1`max`(3`min`height/8-1))" y1="2+(2`max`height/4-1)" 
 		x2="width-2-(1`max`(3`min`height/8-1))" y2="height-height/3-3-(1`max`(3`min`height/8-1))"/>
-	<line color="#669900" 
+	<line color="#503e2f" 
 		x1="width-width/3" y1="height-height/3-2-(1`max`(3`min`height/8-1))" 
 		x2="width-2-(1`max`(3`min`height/8-1))" y2="height-height/3-2-(1`max`(3`min`height/8-1))"/>
 
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="width/3+1" y="1" width="width-width/3-2" height="2`max`height/4-1"/>
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="width/3+1" y="2`max`height/4-1" 
 		width="1`max`(3`min`height/8-1)" height="height/3-(2`max`height/4-1)"/>
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="width-1-(1`max`(3`min`height/8-1))" 
 		y="1+(2`max`height/4-1)" 
 		width="1`max`(3`min`height/8-1)" 
 		height="height-height/3-2-(2`max`height/4-1)-(1`max`(3`min`height/8-1))"/>
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="width-width/3" y="height-height/3-1-(1`max`(3`min`height/8-1))" 
 		width="width/3-1" height="1`max`(3`min`height/8-1)"/>
 
 	<!--front window-->
-	<rectangle color="#669900" filled="false" 
+	<rectangle color="#503e2f" filled="false" 
 		x="0" y="height/3" width="width-width/3-1" height="height-height/3-1"/>
-	<rectangle color="#669900" filled="false" 
+	<rectangle color="#503e2f" filled="false" 
 		x="1+(1`max`(3`min`height/8-1))" 
 		y="height/3+1+(2`max`height/4-1)" 
 		width="width-width/3-3-2*(1`max`(3`min`height/8-1))" 
 		height="height-height/3-3-(2`max`height/4-1)-(1`max`(3`min`height/8-1))"/>
 
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="1" y="height/3+1" width="width-width/3-2" height="2`max`height/4-1"/>
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="1" 
 		y="height/3+1+(2`max`height/4-1)" 
 		width="1`max`(3`min`height/8-1)" 
 		height="height-height/3-2-(2`max`height/4-1)-(1`max`(3`min`height/8-1))"/>
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="width-width/3-1-(1`max`(3`min`height/8-1))" 
 		y="height/3+1+(2`max`height/4-1)" 
 		width="1`max`(3`min`height/8-1)" 
 		height="height-height/3-2-(2`max`height/4-1)-(1`max`(3`min`height/8-1))"/>
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="1" y="height-1-(1`max`(3`min`height/8-1))" 
 		width="width-width/3-2" height="1`max`(3`min`height/8-1)"/>
 </draw_ops>
@@ -1318,13 +1317,13 @@
 <draw_ops name="button_icon_minimize_focused">
 	<rectangle color="#ffffff" filled="true" 
 		x="1" y="height-1-(2`max`height/4)" width="width-2" height="2`max`height/4"/>
-	<rectangle color="#669900" filled="false" 
+	<rectangle color="#503e2f" filled="false" 
 		x="0" y="height-2-(2`max`height/4)" width="width-1" height="(2`max`height/4)+1"/>
 </draw_ops>
 <draw_ops name="button_icon_minimize_focused_pressed">
-	<rectangle color="blend/#669900/#ffffff/0.60" filled="true" 
+	<rectangle color="blend/#503e2f/#ffffff/0.60" filled="true" 
 		x="1" y="height-1-(2`max`height/4)" width="width-2" height="2`max`height/4"/>
-	<rectangle color="#669900" filled="false" 
+	<rectangle color="#503e2f" filled="false" 
 		x="0" y="height-2-(2`max`height/4)" width="width-1" height="(2`max`height/4)+1"/>
 </draw_ops>
 <draw_ops name="button_icon_minimize_unfocused">
@@ -1692,7 +1691,7 @@
 <!--TITLE-->
 <!--title text-->
 <draw_ops name="title_text_focused">
-	<title color="shade/#669900/0.35" x="1" y="1"/>
+	<title color="shade/#503e2f/0.35" x="1" y="1"/>
 	<title color="#ffffff" x="0" y="0"/>
 </draw_ops>
 <draw_ops name="title_text_unfocused">
