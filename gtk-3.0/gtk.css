@@ -1565,6 +1565,12 @@ XfdesktopIconView.view:active { text-shadow: none; color: #f9f06b; background-co
 
 .nemo-desktop-window stack { background: none; border: none; }
 
+#slab_section_style1 > box > label { color: #c9a98e; }
+
+.caja-navigation-window widget.view { caret-color: #7f7f7f; }
+
+#mate-menu { border-width: 2px; border-style: solid; background-color: #606060; border-left-color: #9c9c9c; border-top-color: #9c9c9c; border-right-color: #424242; border-bottom-color: #424242; }
+
 .top-bar { background-color: #503e2f; color: #f9f06b; }
 
 .top-bar:backdrop { background-color: #606060; color: #ffffff; transition: none; }

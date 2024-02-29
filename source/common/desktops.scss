@@ -46,6 +46,26 @@ XfdesktopIconView.view:active {
 	border: none;
 }
 
+// Mate:
+
+// In case contrast of selected bakcground and background is low... mate-control-center needs this:
+
+#slab_section_style1 > box > label {
+    color: mix($selected_bg_color, $text_color, 50%);
+}
+
+.caja-navigation-window widget.view {
+    caret-color: #7f7f7f; //for some reason, when renaming a file in icon view mode, background is white and text is black, so caret needs to be set
+}
+
+
+#mate-menu { 
+    border-width: $border_width;
+    border-style: solid;
+    @include relief($bg_color);
+    } //not working...
+
+
 // general libadwaita
 .top-bar {
     background-color: $titlebar_active_bg;
