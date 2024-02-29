@@ -1,40 +1,40 @@
-$window_fg: #ffffff;
-$window_bg: #606060;
-$text_widget_fg: #ffffff;
-$text_widget_bg: #555555;
+$window_fg: #1d1d1d;
+$window_bg: #bbbbbb;
+$text_widget_fg: #1d1d1d;
+$text_widget_bg: #CCCCCC;
 
-$selected_fg: #f9f06b;
-$selected_bg: #93531c;
+$selected_fg: #000000;
+$selected_bg: #D8761A;
 
-$button_fg: #ffffff;
-$button_bg: #777777;
-$button_checked_bg: #93531c;
-$button_checked_fg: #f9f06b;
+$button_fg: #1d1d1d;
+$button_bg: #dddddd;
+$button_checked_bg: #D8761A;
+$button_checked_fg: #000000;
 
 
-$disabled_fg: #878787;
-$disabled_bg: #595959;
+$disabled_fg: #807a6a;
+$disabled_bg: #c3bbaf;
 
 /*Usually an automatic fg color on these backgrounds should check this value!*/
-$warningc: #f57900;
-$errorc: #CC0000;
-$successc: #33d17a;
+$warningc: #E1BF00;
+$errorc: #df0000;
+$successc: #6FD213;
 
 
-$titlebar_active_fg: #f9f06b;
-$titlebar_active_bg: #503e2f;
+$titlebar_active_fg: #1d1d1d;
+$titlebar_active_bg: #AF8F71;
 
-$titlebar_backdrop_fg: #ffffff;
-$titlebar_backdrop_bg: #606060;
+$titlebar_backdrop_fg: #1d1d1d;
+$titlebar_backdrop_bg: #bbbbbb;
 
-$hint_fg: #7dbf60;
-$hint_bg: #555e55;
+$hint_fg: #273313;
+$hint_bg: #C3DDAE;
 
-$osd_fg: #7dbf60;
-$osd_bg: #555e55;
+$osd_fg: #273313;
+$osd_bg: #C3DDAE;
 
-$link_fg: #99c1f1;
-$link_visited_fg: #dc8add;
+$link_fg: #004B91;
+$link_visited_fg: #680091;
 
 // ---- These are not colors, but other types of variables:
 
