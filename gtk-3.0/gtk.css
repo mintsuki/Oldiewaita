@@ -59,9 +59,21 @@ label:disabled { color: #807a6a; }
 
 button label:disabled { color: inherit; }
 
-label.error { color: #df0000; }
+label.error { color: #7e0f0f; }
 
-label.error:disabled { color: #807969; }
+label.error:disabled { color: #b03d35; }
+
+label.warning { color: #7f6e0f; }
+
+label.warning:disabled { color: #b19d35; }
+
+label.success { color: #467818; }
+
+label.success:disabled { color: #78a63f; }
+
+label.accent { color: #7b4a1c; }
+
+label.accent:disabled { color: #ac7842; }
 
 .dim-label, .titlebar:not(headerbar) .subtitle, headerbar .subtitle, label.separator { opacity: 0.55; text-shadow: none; }
 
@@ -148,7 +160,21 @@ spinbutton:not(.vertical) progress, entry progress { margin: 3px 3px; background
 
 spinbutton:not(.vertical) progress:backdrop, entry progress:backdrop { background-color: transparent; }
 
-spinbutton.error:not(.vertical), entry.error { color: #df0000; }
+spinbutton.error:not(.vertical), entry.error { color: #7e0f0f; }
+
+spinbutton.error:disabled:not(.vertical), entry.error:disabled { color: #b03d35; }
+
+spinbutton.warning:not(.vertical), entry.warning { color: #7f6e0f; }
+
+spinbutton.warning:disabled:not(.vertical), entry.warning:disabled { color: #b19d35; }
+
+spinbutton.success:not(.vertical), entry.success { color: #467818; }
+
+spinbutton.success:disabled:not(.vertical), entry.success:disabled { color: #78a63f; }
+
+spinbutton.accent:not(.vertical), entry.accent { color: #7b4a1c; }
+
+spinbutton.accent:disabled:not(.vertical), entry.accent:disabled { color: #ac7842; }
 
 treeview entry:focus:dir(rtl), treeview entry:focus:dir(ltr) { background-color: #CCCCCC; }
 

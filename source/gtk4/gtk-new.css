@@ -93,9 +93,21 @@ label:disabled { color: #807a6a; }
 
 button label:disabled { color: inherit; }
 
-label.error { color: #df0000; }
+label.error { color: #7e0f0f; }
 
-label.error:disabled { color: #807969; }
+label.error:disabled { color: #b03d35; }
+
+label.warning { color: #7f6e0f; }
+
+label.warning:disabled { color: #b19d35; }
+
+label.success { color: #467818; }
+
+label.success:disabled { color: #78a63f; }
+
+label.accent { color: #7b4a1c; }
+
+label.accent:disabled { color: #ac7842; }
 
 .dim-label, .titlebar:not(headerbar) .subtitle, headerbar .subtitle, spinbutton.vertical > text > text > placeholder, spinbutton:not(.vertical) > text > placeholder, entry > text > placeholder, label.separator { opacity: 0.55; text-shadow: none; }
 
@@ -214,7 +226,21 @@ spinbutton.vertical > text > progress, spinbutton:not(.vertical) > progress, ent
 
 spinbutton.vertical > text progress > trough > progress, spinbutton:not(.vertical) progress > trough > progress, entry progress > trough > progress { background-color: transparent; background-image: none; border-radius: 0; border-width: 0 0 2px; border-color: #D8761A; border-style: solid; box-shadow: none; margin-bottom: 1px; }
 
-spinbutton.vertical > text.error, spinbutton.error:not(.vertical), entry.error { color: #df0000; }
+spinbutton.vertical > text.error, spinbutton.error:not(.vertical), entry.error { color: #7e0f0f; }
+
+spinbutton.vertical > text.error:disabled, spinbutton.error:disabled:not(.vertical), entry.error:disabled { color: #b03d35; }
+
+spinbutton.vertical > text.warning, spinbutton.warning:not(.vertical), entry.warning { color: #7f6e0f; }
+
+spinbutton.vertical > text.warning:disabled, spinbutton.warning:disabled:not(.vertical), entry.warning:disabled { color: #b19d35; }
+
+spinbutton.vertical > text.success, spinbutton.success:not(.vertical), entry.success { color: #467818; }
+
+spinbutton.vertical > text.success:disabled, spinbutton.success:disabled:not(.vertical), entry.success:disabled { color: #78a63f; }
+
+spinbutton.vertical > text.accent, spinbutton.accent:not(.vertical), entry.accent { color: #7b4a1c; }
+
+spinbutton.vertical > text.accent:disabled, spinbutton.accent:disabled:not(.vertical), entry.accent:disabled { color: #ac7842; }
 
 .linked spinbutton.vertical > text, .linked spinbutton:not(.vertical), .linked entry { margin: 0; }
 

@@ -179,10 +179,23 @@ label {
   //}
 
   &.error {
-    color: $error_color;
-    &:disabled { color: mix($error_color,$insensitive_fg_color,0.5); }
-    //&:disabled:backdrop { color: transparentize($error_color,0.6); }
+    color: mix($error_color, $fg_color, 50%);
+    &:disabled { color: mix($error_color,$insensitive_fg_color, 50%); }
   }
+  &.warning {
+    color: mix($warning_color, $fg_color, 50%);
+    &:disabled { color: mix($warning_color,$insensitive_fg_color, 50%); }
+  }
+
+  &.success {
+    color: mix($success_color, $fg_color, 50%);
+    &:disabled { color: mix($success_color,$insensitive_fg_color, 50%); }
+  }
+  &.accent {
+    color: mix($selected_bg_color, $fg_color, 50%);
+    &:disabled { color: mix($selected_bg_color,$insensitive_fg_color,50%); }
+  }
+
 }
 
 .dim-label {
@@ -385,7 +398,23 @@ entry {
    // linked entries: all suppressed
 
 
-  &.error { color: $error_color; }
+    &.error {
+    color: mix($error_color, $fg_color, 50%);
+    &:disabled { color: mix($error_color,$insensitive_fg_color,50%); }
+  }
+  &.warning {
+    color: mix($warning_color, $fg_color, 50%);
+    &:disabled { color: mix($warning_color,$insensitive_fg_color,50%); }
+  }
+
+  &.success {
+    color: mix($success_color, $fg_color, 50%);
+    &:disabled { color: mix($success_color,$insensitive_fg_color,50%); }
+  }
+  &.accent {
+    color: mix($selected_bg_color, $fg_color, 50%);
+    &:disabled { color: mix($selected_bg_color,$insensitive_fg_color,50%); }
+  }
 }
 
 treeview entry {
