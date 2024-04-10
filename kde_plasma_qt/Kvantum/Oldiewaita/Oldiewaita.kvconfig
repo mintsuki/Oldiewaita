@@ -1,6 +1,6 @@
 [%General]
 author=Néstor Andreu
-comment=Simple theme with dark and green colors
+comment=Oldiewaita's Kvantum theme (light with orange hues)
 alt_mnemonic=true
 animate_states=false
 attach_active_tab=true
@@ -76,24 +76,24 @@ x11drag=all
 
 
 [GeneralColors]
-window.color=#3f3e3e
-base.color=#2d2d2d
-alt.base.color=#2d2d#333333
-button.color=#4e584d
-light.color=#5F5D5D
-mid.light.color=#5F5D5D#4E4D4D
-dark.color=#2C2C2C
-mid.color=#383838
-highlight.color=#669900
-inactive.highlight.color=#669900
-text.color=white
-window.text.color=white
-button.text.color=white
+window.color=#bbbbbb
+base.color=#CCCCCC
+alt.base.color=##b5b5b5
+button.color=#dddddd
+light.color=#ededed
+mid.light.color=#e5e5e5
+dark.color=#a2a2a2
+mid.color=#cccccc
+highlight.color=#D8761A
+inactive.highlight.color=#ce9c6d
+text.color=#1d1d1d
+window.text.color=#1d1d1d
+button.text.color=#1d1d1d
 disabled.text.color=#ae907c
-tooltip.text.color=63c9ec
-highlight.text.color=#d1ff96
-link.color=#2EB8E6
-link.visited.color=#FF6666
+tooltip.text.color=#273313
+highlight.text.color=#000000
+link.color=#142586
+link.visited.color=#89068d
 
 [Hacks]
 respect_darkness=true
@@ -129,10 +129,10 @@ text.margin.top=2
 text.margin.bottom=2
 text.margin.left=2
 text.margin.right=2
-text.normal.color=white
-text.focus.color=white
-text.press.color=#d1ff96
-text.toggle.color=#d1ff96
+text.normal.color=#1d1d1d
+text.focus.color=#1d1d1d
+text.press.color=#000000
+text.toggle.color=#000000
 indicator.size=8
 min_width=+0.2font
 min_height=+0.15font
@@ -153,7 +153,7 @@ frame=false
 
 [DockTitle]
 text.bold=true
-text.focus.color=white
+text.focus.color=#000000
 
 [LineEdit]
 inherits=PanelButtonCommand
@@ -202,14 +202,13 @@ frame.bottom=2
 frame.left=2
 frame.right=2
 focusFrame=false
-text.press.color=white
 indicator.size=12
 min_width=+0.35font
 min_height=+0.2font
-text.normal.color=#8f9193
-text.focus.color=white
-text.press.color=white
-text.toggle.color=white
+text.normal.color=#757575
+text.focus.color=#1d1d1d
+text.press.color=#1d1d1d
+text.toggle.color=#1d1d1d
 
 
 [TabFrame]
@@ -248,7 +247,7 @@ frame.top=2
 frame.bottom=2
 frame.left=2
 frame.right=2
-text.press.color=white
+text.press.color=#000000
 text.bold=true
 
 [SizeGrip]
@@ -302,7 +301,7 @@ frame.right=2
 
 [Progressbar]
 text.bold=true
-text.focus.color=white
+text.focus.color=#000000
 frame=true
 frame.element=lineedit
 frame.top=2
@@ -343,10 +342,9 @@ text.margin.left=5
 text.margin.right=5
 frame=false
 interior.element=menuitem
-text.focus.color=white
 min_width=0
 min_height=0
-text.focus.color=#d1ff96
+text.focus.color=#000000
 
 [MenuBarItem]
 inherits=PanelButtonCommand
@@ -358,7 +356,7 @@ text.margin.left=4
 text.margin.right=4
 min_width=0
 min_height=0
-text.focus.color=#d1ff96
+text.focus.color=#000000
 
 [TitleBar]
 inherits=PanelButtonCommand
@@ -368,7 +366,7 @@ text.margin.left=3
 text.margin.right=3
 text.bold=true
 text.italic=true
-text.focus.color=white
+text.focus.color=#000000
 
 [ComboBox]
 inherits=PanelButtonCommand
@@ -385,7 +383,7 @@ frame=true
 inherits=PanelButtonCommand
 frame.element=tooltip
 interior.element=tooltip
-text.normal.color=white
+text.normal.color=#273313
 frame.top=2
 frame.bottom=2
 frame.left=2
