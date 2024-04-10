@@ -1,17 +1,33 @@
 /*Usually an automatic fg color on these backgrounds should check this value!*/
 /*************************** Check and Radio buttons * */
 /*************************** Check and Radio buttons * */
-calendar:selected, row:selected, treeview.view:selected:focus, treeview.view:selected, modelbutton.flat:selected, .menuitem.button.flat:selected, .entry:selected:focus, .entry:selected, spinbutton:not(.vertical) selection, entry selection, flowbox flowboxchild:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection, textview text selection:focus, textview text selection, .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected, .view text:selected:focus, iconview text:selected:focus, textview text:selected:focus, .view text:selected, iconview text:selected, textview text:selected { background-color: #D8761A; color: #000000; }
+calendar:selected, row:selected, treeview.view:selected:focus, treeview.view:selected, modelbutton.flat:hover, modelbutton.flat:selected, .menuitem.button.flat:hover, .menuitem.button.flat:selected, .entry:selected:focus, .entry:selected, spinbutton:not(.vertical) selection, entry selection, flowbox flowboxchild:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection, textview text selection:focus, textview text selection, .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected, .view text:selected:focus, iconview text:selected:focus, textview text:selected:focus, .view text:selected, iconview text:selected, textview text:selected { background-color: #D8761A; color: #000000; }
 
-.selection-mode button.titlebutton, label:selected, calendar:selected, row:selected, treeview.view:selected:focus, treeview.view:selected, modelbutton.flat:selected, .menuitem.button.flat:selected, .entry:selected:focus, .entry:selected, spinbutton:not(.vertical) selection, entry selection, flowbox flowboxchild:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection, textview text selection:focus, textview text selection, .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected, .view text:selected:focus, iconview text:selected:focus, textview text:selected:focus, .view text:selected, iconview text:selected, textview text:selected { color: #000000; }
+.selection-mode button.titlebutton, label:selected, calendar:selected, row:selected, treeview.view:selected:focus, treeview.view:selected, modelbutton.flat:hover, modelbutton.flat:selected, .menuitem.button.flat:hover, .menuitem.button.flat:selected, .entry:selected:focus, .entry:selected, spinbutton:not(.vertical) selection, entry selection, flowbox flowboxchild:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection, textview text selection:focus, textview text selection, .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected, .view text:selected:focus, iconview text:selected:focus, textview text:selected:focus, .view text:selected, iconview text:selected, textview text:selected { color: #000000; }
 
-label:disabled selection, .selection-mode button.titlebutton:disabled, label:disabled:selected, calendar:disabled:selected, row:disabled:selected, treeview.view:disabled:selected, modelbutton.flat:disabled:selected, .menuitem.button.flat:disabled:selected, .entry:disabled:selected, spinbutton:not(.vertical) selection:disabled, entry selection:disabled, flowbox flowboxchild:disabled:selected, .view text selection:disabled, iconview text selection:disabled, textview text selection:disabled:focus, textview text selection:disabled, .view:disabled:selected, iconview:disabled:selected, .view text:disabled:selected, iconview text:disabled:selected, textview text:disabled:selected { color: #6c3b0d; }
+label:disabled selection, .selection-mode button.titlebutton:disabled, label:disabled:selected, calendar:disabled:selected, row:disabled:selected, treeview.view:disabled:selected, modelbutton.flat:disabled:hover, modelbutton.flat:disabled:selected, .menuitem.button.flat:disabled:hover, .menuitem.button.flat:disabled:selected, .entry:disabled:selected, spinbutton:not(.vertical) selection:disabled, entry selection:disabled, flowbox flowboxchild:disabled:selected, .view text selection:disabled, iconview text selection:disabled, textview text selection:disabled:focus, textview text selection:disabled, .view:disabled:selected, iconview:disabled:selected, .view text:disabled:selected, iconview text:disabled:selected, textview text:disabled:selected { color: #6c3b0d; }
 
-.selection-mode button.titlebutton:backdrop, label:backdrop:selected, calendar:backdrop:selected, row:backdrop:selected, treeview.view:backdrop:selected, modelbutton.flat:backdrop:selected, .menuitem.button.flat:backdrop:selected, .entry:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, entry selection:backdrop, flowbox flowboxchild:backdrop:selected, .view text selection:backdrop, iconview text selection:backdrop, textview text selection:backdrop:focus, textview text selection:backdrop, .view:backdrop:selected, iconview:backdrop:selected, .view text:backdrop:selected, iconview text:backdrop:selected, textview text:backdrop:selected { color: #000000; background-color: #D8761A; }
+.selection-mode button.titlebutton:backdrop, label:backdrop:selected, calendar:backdrop:selected, row:backdrop:selected, treeview.view:backdrop:selected, modelbutton.flat:backdrop:hover, modelbutton.flat:backdrop:selected, .menuitem.button.flat:backdrop:hover, .menuitem.button.flat:backdrop:selected, .entry:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, entry selection:backdrop, flowbox flowboxchild:backdrop:selected, .view text selection:backdrop, iconview text selection:backdrop, textview text selection:backdrop:focus, textview text selection:backdrop, .view:backdrop:selected, iconview:backdrop:selected, .view text:backdrop:selected, iconview text:backdrop:selected, textview text:backdrop:selected { color: #000000; background-color: #D8761A; }
 
-scale slider, switch slider, scrollbar slider { background-image: radial-gradient(circle closest-side, currentColor, currentColor 90%, transparent); background-size: 4px 4px; background-repeat: no-repeat; background-position: center; }
+entry.error, entry.error > text, label.error, label.error > text { color: #7e0f0f; }
 
-cursor-handle:disabled, button.titlebutton.minimize:disabled, button.titlebutton.maximize:disabled, button.titlebutton.close:disabled, infobar.error button:disabled, infobar.warning button:disabled, infobar.question button:disabled, infobar.info button:disabled, infobar button:disabled, .osd scale slider:disabled, scale slider:disabled, .osd check:disabled, .osd radio:disabled, check:checked:disabled, check.view:checked:disabled, .view check:checked:disabled, radio:checked:disabled, radio.view:checked:disabled, .view radio:checked:disabled, check:disabled, check.view:disabled, .view check:disabled, radio:disabled, radio.view:disabled, .view radio:disabled, switch:disabled slider, notebook > header tab:disabled, notebook.frame > header tab:disabled, .selection-mode .titlebar:not(headerbar) button.suggested-action:disabled, .selection-mode.titlebar:not(headerbar) button.suggested-action:disabled, .selection-mode headerbar button.suggested-action:disabled, headerbar.selection-mode button.suggested-action:disabled, .selection-mode .titlebar:not(headerbar) button:disabled:active, .selection-mode .titlebar:not(headerbar) button:disabled:checked, .selection-mode.titlebar:not(headerbar) button:disabled:active, .selection-mode.titlebar:not(headerbar) button:disabled:checked, .selection-mode headerbar button:disabled:active, .selection-mode headerbar button:disabled:checked, headerbar.selection-mode button:disabled:active, headerbar.selection-mode button:disabled:checked, .selection-mode .titlebar:not(headerbar) button:disabled, .selection-mode.titlebar:not(headerbar) button:disabled, .selection-mode headerbar button:disabled, headerbar.selection-mode button:disabled, .osd spinbutton.vertical button:first-child:disabled, .inline-toolbar toolbutton > button:disabled:active, .inline-toolbar toolbutton > button:disabled:checked, .inline-toolbar toolbutton > button:disabled, headerbar calendar.button:backdrop:disabled:active, headerbar calendar.button:backdrop:disabled:checked, .topbar calendar.button:backdrop:disabled:active, .topbar calendar.button:backdrop:disabled:checked, headerbar button:backdrop:disabled:active, headerbar button:backdrop:disabled:checked, .topbar button:backdrop:disabled:active, .topbar button:backdrop:disabled:checked, headerbar calendar.button:backdrop:disabled, headerbar button:backdrop:disabled, .topbar button:backdrop:disabled, headerbar button:disabled:active, headerbar button:disabled:checked, .topbar button:disabled:active, .topbar button:disabled:checked, headerbar calendar.button:disabled, .topbar calendar.button:disabled, headerbar button:disabled, .topbar button:disabled, .osd calendar.destructive-action.button:disabled:backdrop, .osd calendar.destructive-action.button:disabled, .osd button.destructive-action:disabled:backdrop, .osd button.destructive-action:disabled, calendar.destructive-action.button:disabled:active, calendar.destructive-action.button:disabled:checked, button.destructive-action:disabled:active, button.destructive-action:disabled:checked, calendar.destructive-action.button:disabled, button.destructive-action:disabled, .osd calendar.suggested-action.button:disabled:backdrop, .osd calendar.suggested-action.button:disabled, .osd button.suggested-action:disabled:backdrop, .osd button.suggested-action:disabled, calendar.suggested-action.button:disabled:active, calendar.suggested-action.button:disabled:checked, button.suggested-action:disabled:active, button.suggested-action:disabled:checked, calendar.suggested-action.button:disabled, button.suggested-action:disabled, .app-notification button.flat:disabled, .app-notification.frame button.flat:disabled, .csd popover.background.touch-selection button.flat:disabled, .csd popover.background.magnifier button.flat:disabled, popover.background.touch-selection button.flat:disabled, popover.background.magnifier button.flat:disabled, .osd button.flat:disabled, .app-notification button:disabled, .app-notification.frame button:disabled, .csd popover.background.touch-selection button:disabled, .csd popover.background.magnifier button:disabled, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled, .osd calendar.button:disabled, .osd button:disabled, calendar.osd.button:disabled, button.osd:disabled, button.titlebutton:disabled:active, scrollbar slider:disabled:active, notebook > header > tabs > arrow:disabled:active, notebook.frame > header > tabs > arrow:disabled:active, .nautilus-path-bar .path-buttons-box button:disabled:active, button.titlebutton:disabled:checked, scrollbar slider:disabled:checked, notebook > header > tabs > arrow:disabled:checked, notebook.frame > header > tabs > arrow:disabled:checked, .nautilus-path-bar .path-buttons-box button:disabled:checked, calendar.button:disabled:active, calendar.button:disabled:checked, button:disabled:active, button:disabled:checked, button.titlebutton:disabled, scrollbar slider:disabled, notebook > header > tabs > arrow:disabled, notebook.frame > header > tabs > arrow:disabled, .nautilus-path-bar .path-buttons-box button:disabled, calendar.button:disabled, button:disabled, .osd spinbutton:disabled:not(.vertical), .osd entry:disabled, spinbutton:disabled:not(.vertical), entry:disabled { background-image: linear-gradient(45deg, alpha(currentColor,0.5) 10%, alpha(currentColor,0) 10%, alpha(currentColor,0) 50%, alpha(currentColor,0.5) 50%, alpha(currentColor,0.5) 60%, alpha(currentColor,0) 60%); background-size: 0.6em 0.6em; background-repeat: repeat; background-position: center; }
+entry.error:disabled, entry.error > text:disabled, label.error:disabled, label.error > text:disabled { color: #b03d35; }
+
+entry.warning, entry.warning > text, label.warning, label.warning > text { color: #7f6e0f; }
+
+entry.warning:disabled, entry.warning > text:disabled, label.warning:disabled, label.warning > text:disabled { color: #b19d35; }
+
+entry.success, entry.success > text, label.success, label.success > text { color: #467818; }
+
+entry.success:disabled, entry.success > text:disabled, label.success:disabled, label.success > text:disabled { color: #78a63f; }
+
+entry.accent, entry.accent > text, label.accent, label.accent > text { color: #D8761A; }
+
+entry.accent:disabled, entry.accent > text:disabled, label.accent:disabled, label.accent > text:disabled { color: #ac7842; }
+
+paned > separator, scale slider, switch slider, scrollbar slider, tab.reorderable-page, tabbox tab { background-image: radial-gradient(circle, alpha(currentColor,0.4) 15%, alpha(currentColor,0) 20%); background-size: 0.3em 0.3em; background-repeat: repeat; background-clip: padding-box; }
+
+cursor-handle:disabled, button.titlebutton.minimize:disabled, button.titlebutton.maximize:disabled, button.titlebutton.close:disabled, infobar.error button:disabled, infobar.warning button:disabled, infobar.question button:disabled, infobar.info button:disabled, infobar button:disabled, .osd scale slider:disabled, scale slider:disabled, .osd check:disabled, .osd radio:disabled, check:checked:disabled, check.view:checked:disabled, .view check:checked:disabled, radio:checked:disabled, radio.view:checked:disabled, .view radio:checked:disabled, check:disabled, check.view:disabled, .view check:disabled, radio:disabled, radio.view:disabled, .view radio:disabled, switch:disabled slider, tab.reorderable-page:disabled, tabbox tab:disabled, notebook > header tab:disabled, notebook.frame > header tab:disabled, .selection-mode .titlebar:not(headerbar) button.suggested-action:disabled, .selection-mode.titlebar:not(headerbar) button.suggested-action:disabled, .selection-mode headerbar button.suggested-action:disabled, headerbar.selection-mode button.suggested-action:disabled, .selection-mode .titlebar:not(headerbar) button:disabled:active, .selection-mode .titlebar:not(headerbar) button:disabled:checked, .selection-mode.titlebar:not(headerbar) button:disabled:active, .selection-mode.titlebar:not(headerbar) button:disabled:checked, .selection-mode headerbar button:disabled:active, .selection-mode headerbar button:disabled:checked, headerbar.selection-mode button:disabled:active, headerbar.selection-mode button:disabled:checked, .selection-mode .titlebar:not(headerbar) button:disabled, .selection-mode.titlebar:not(headerbar) button:disabled, .selection-mode headerbar button:disabled, headerbar.selection-mode button:disabled, .osd spinbutton.vertical button:first-child:disabled, .inline-toolbar toolbutton > button:disabled:active, .inline-toolbar toolbutton > button:disabled:checked, .inline-toolbar toolbutton > button:disabled, headerbar calendar.button:backdrop:disabled:active, headerbar calendar.button:backdrop:disabled:checked, .topbar calendar.button:backdrop:disabled:active, .topbar calendar.button:backdrop:disabled:checked, headerbar button:backdrop:disabled:active, headerbar button:backdrop:disabled:checked, .topbar button:backdrop:disabled:active, .topbar button:backdrop:disabled:checked, headerbar calendar.button:backdrop:disabled, headerbar button:backdrop:disabled, .topbar button:backdrop:disabled, headerbar button:disabled:active, headerbar button:disabled:checked, .topbar button:disabled:active, .topbar button:disabled:checked, headerbar calendar.button:disabled, .topbar calendar.button:disabled, headerbar button:disabled, .topbar button:disabled, .osd calendar.destructive-action.button:disabled:backdrop, .osd calendar.destructive-action.button:disabled, .osd button.destructive-action:disabled:backdrop, .osd button.destructive-action:disabled, calendar.destructive-action.button:disabled:active, calendar.destructive-action.button:disabled:checked, button.destructive-action:disabled:active, button.destructive-action:disabled:checked, calendar.destructive-action.button:disabled, button.destructive-action:disabled, .osd calendar.suggested-action.button:disabled:backdrop, .osd calendar.suggested-action.button:disabled, .osd button.suggested-action:disabled:backdrop, .osd button.suggested-action:disabled, calendar.suggested-action.button:disabled:active, calendar.suggested-action.button:disabled:checked, button.suggested-action:disabled:active, button.suggested-action:disabled:checked, calendar.suggested-action.button:disabled, button.suggested-action:disabled, .app-notification button.flat:disabled, .app-notification.frame button.flat:disabled, .csd popover.background.touch-selection button.flat:disabled, .csd popover.background.magnifier button.flat:disabled, popover.background.touch-selection button.flat:disabled, popover.background.magnifier button.flat:disabled, .osd button.flat:disabled, .app-notification button:disabled, .app-notification.frame button:disabled, .csd popover.background.touch-selection button:disabled, .csd popover.background.magnifier button:disabled, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled, .osd calendar.button:disabled, .osd button:disabled, calendar.osd.button:disabled, button.osd:disabled, button.titlebutton:disabled:active, scrollbar slider:disabled:active, notebook > header > tabs > arrow:disabled:active, notebook.frame > header > tabs > arrow:disabled:active, .nautilus-path-bar .path-buttons-box button:disabled:active, button.titlebutton:disabled:checked, scrollbar slider:disabled:checked, notebook > header > tabs > arrow:disabled:checked, notebook.frame > header > tabs > arrow:disabled:checked, .nautilus-path-bar .path-buttons-box button:disabled:checked, calendar.button:disabled:active, calendar.button:disabled:checked, button:disabled:active, button:disabled:checked, button.titlebutton:disabled, scrollbar slider:disabled, notebook > header > tabs > arrow:disabled, notebook.frame > header > tabs > arrow:disabled, .nautilus-path-bar .path-buttons-box button:disabled, calendar.button:disabled, button:disabled, .osd spinbutton:disabled:not(.vertical), .osd entry:disabled, spinbutton:disabled:not(.vertical), entry:disabled { background-image: linear-gradient(45deg, alpha(currentColor,0.5) 10%, alpha(currentColor,0) 10%, alpha(currentColor,0) 50%, alpha(currentColor,0.5) 50%, alpha(currentColor,0.5) 60%, alpha(currentColor,0) 60%); background-size: 0.6em 0.6em; background-repeat: repeat; background-position: center; }
 
 * { padding: 0; -GtkToolButton-icon-spacing: 4; -GtkTextView-error-underline-color: #df0000; -GtkScrolledWindow-scrollbar-spacing: 0; -GtkToolItemGroup-expander-size: 11; -GtkWidget-text-handle-width: 20; -GtkWidget-text-handle-height: 24; -GtkDialog-button-spacing: 4; -GtkDialog-action-area-border: 0; outline-color: alpha(currentColor,0.3); outline-style: dashed; outline-offset: -3px; outline-width: 1px; -gtk-outline-radius: 0px; -gtk-secondary-caret-color: #D8761A; }
 
@@ -58,22 +74,6 @@ label selection { background-color: #D8761A; color: #000000; }
 label:disabled { color: #807a6a; }
 
 button label:disabled { color: inherit; }
-
-label.error { color: #7e0f0f; }
-
-label.error:disabled { color: #b03d35; }
-
-label.warning { color: #7f6e0f; }
-
-label.warning:disabled { color: #b19d35; }
-
-label.success { color: #467818; }
-
-label.success:disabled { color: #78a63f; }
-
-label.accent { color: #7b4a1c; }
-
-label.accent:disabled { color: #ac7842; }
 
 .dim-label, .titlebar:not(headerbar) .subtitle, headerbar .subtitle, label.separator { opacity: 0.55; text-shadow: none; }
 
@@ -159,22 +159,6 @@ spinbutton:drop(active):not(.vertical), entry:drop(active):focus, entry:drop(act
 spinbutton:not(.vertical) progress, entry progress { margin: 3px 3px; background-color: transparent; background-image: none; border-radius: 0; border-width: 0 0 2px; border-color: #D8761A; border-style: solid; box-shadow: none; }
 
 spinbutton:not(.vertical) progress:backdrop, entry progress:backdrop { background-color: transparent; }
-
-spinbutton.error:not(.vertical), entry.error { color: #7e0f0f; }
-
-spinbutton.error:disabled:not(.vertical), entry.error:disabled { color: #b03d35; }
-
-spinbutton.warning:not(.vertical), entry.warning { color: #7f6e0f; }
-
-spinbutton.warning:disabled:not(.vertical), entry.warning:disabled { color: #b19d35; }
-
-spinbutton.success:not(.vertical), entry.success { color: #467818; }
-
-spinbutton.success:disabled:not(.vertical), entry.success:disabled { color: #78a63f; }
-
-spinbutton.accent:not(.vertical), entry.accent { color: #7b4a1c; }
-
-spinbutton.accent:disabled:not(.vertical), entry.accent:disabled { color: #ac7842; }
 
 treeview entry:focus:dir(rtl), treeview entry:focus:dir(ltr) { background-color: #CCCCCC; }
 
@@ -358,9 +342,7 @@ calendar.circular.button, button.circular { border-radius: 9999px; -gtk-outline-
 
 calendar.circular.button label, button.circular label { padding: 0; }
 
-calendar.circular.button:not(.flat):not(.osd):not(:checked):not(:active):not(:disabled), button.circular:not(.flat):not(.osd):not(:checked):not(:active):not(:disabled) { border-width: 2px; color: #1d1d1d; background-color: #dddddd; border-left-color: #fafafa; border-top-color: #fafafa; border-right-color: #cecece; border-bottom-color: #cecece; }
-
-calendar.circular.button:hover:not(.osd):not(:checked):not(:active):not(:disabled), button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled) { border-width: 2px; background-color: #eaeaea; border-left-color: #fdfdfd; border-top-color: #fdfdfd; border-right-color: #e0e0e0; border-bottom-color: #e0e0e0; }
+calendar.pill.button, button.pill { border-radius: 9999px; -gtk-outline-radius: 9999px; }
 
 stacksidebar row.needs-attention > label, .stack-switcher > calendar.needs-attention.button > label, .stack-switcher > calendar.needs-attention.button > image, .stack-switcher > button.needs-attention > label, .stack-switcher > button.needs-attention > image { background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#E1BF00), to(transparent)); background-size: 6px 6px; background-repeat: no-repeat; background-position: right 3px, right 4px; }
 
@@ -396,8 +378,6 @@ button:link:hover, button:link:active, button:link:checked, button:visited:hover
 
 /* menu buttons */
 modelbutton.flat, .menuitem.button.flat { min-height: 26px; padding-left: 5px; padding-right: 5px; border-radius: 0px; outline-offset: -2px; }
-
-modelbutton.flat:hover, .menuitem.button.flat:hover { background-color: #c8c8c8; }
 
 modelbutton.flat arrow { background: none; }
 
@@ -499,7 +479,7 @@ combobox button, combobox button:backdrop { min-height: 1.6em; min-width: 1.6em;
 combobox:drop(active) { box-shadow: none; }
 
 /************ Toolbars * */
-searchbar > revealer > box, .location-bar, .inline-toolbar, toolbar { -GtkWidget-window-dragging: true; padding: 4px; border-width: 2px; border-style: solid; color: #1d1d1d; background-color: #bbbbbb; border-left-color: #ededed; border-top-color: #ededed; border-right-color: #a2a2a2; border-bottom-color: #a2a2a2; }
+searchbar > revealer > box, .location-bar, .inline-toolbar, toolbar { -GtkWidget-window-dragging: true; padding: 4px; border-radius: 0px; border-width: 2px; border-style: solid; color: #1d1d1d; background-color: #bbbbbb; border-left-color: #ededed; border-top-color: #ededed; border-right-color: #a2a2a2; border-bottom-color: #a2a2a2; }
 
 toolbar { padding: 4px 3px 3px 4px; }
 
@@ -525,6 +505,8 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 .titlebar:not(headerbar), headerbar { padding: 4px; min-height: 2.5em; border: 3px solid; background-color: #AF8F71; border-left-color: #dccec1; border-top-color: #dccec1; border-right-color: #897058; border-bottom-color: #897058; border-radius: 0px; background-color: #AF8F71; color: #1d1d1d; /* Darken switchbuttons for headerbars. issue #1588 */ /* hide the close button separator */ }
 
 .titlebar:backdrop:not(headerbar), headerbar:backdrop { background-color: #bbbbbb; background-color: #bbbbbb; border-left-color: #ededed; border-top-color: #ededed; border-right-color: #a2a2a2; border-bottom-color: #a2a2a2; color: #1d1d1d; transition: none; }
+
+window.devel .titlebar:not(headerbar), window.devel headerbar { background-image: linear-gradient(45deg, alpha(currentColor,0.1) 25%, alpha(currentColor,0) 25%, alpha(currentColor,0) 50%, alpha(currentColor,0.1) 50%, alpha(currentColor,0.1) 75%, alpha(currentColor,0) 75%); background-size: 5em 5em; background-repeat: repeat; background-position: center; }
 
 .titlebar:not(headerbar) .title, headerbar .title { padding-left: 12px; padding-right: 12px; font-weight: bold; }
 
@@ -867,7 +849,9 @@ notebook > header.bottom tab, notebook.frame > header.bottom tab { padding-top: 
 
 notebook > stack:not(:only-child), notebook.frame > stack:not(:only-child) { border: none; background-color: #c4c4c4; margin: 2px; }
 
-tab.reorderable-page, tabbox tab { background-image: radial-gradient(circle closest-side at 0.4em 0.4em, currentColor, currentColor 30%, alpha(currentColor,0) 33%); }
+tab.reorderable-page label, tabbox tab label { border-radius: 9999px; padding: 0 0.5em; background-color: #CCCCCC; }
+
+tab.reorderable-page:checked label, tabbox tab:checked label { background-color: #c4c4c4; }
 
 tabthumbnail overlay.card > picture { border-radius: 0px; }
 
@@ -1305,7 +1289,7 @@ placesview row.activatable:hover { background-color: transparent; }
 placesview > actionbar > revealer > box > label { padding-left: 8px; padding-right: 8px; }
 
 /********* Paned * */
-paned > separator { min-width: 4px; min-height: 4px; -gtk-icon-source: none; border-width: 2px; border-style: solid; background-image: radial-gradient(circle closest-side, #1d1d1d 0%, #1d1d1d 75%, rgba(29, 29, 29, 0) 100%); background-clip: padding-box; background-repeat: no-repeat; background-position: center; box-shadow: none; margin: 0; padding: 0; background-color: #bbbbbb; border-left-color: #ededed; border-top-color: #ededed; border-right-color: #a2a2a2; border-bottom-color: #a2a2a2; }
+paned > separator { min-width: 4px; min-height: 4px; -gtk-icon-source: none; border-width: 2px; border-style: solid; box-shadow: none; margin: 0; padding: 0; background-color: #bbbbbb; border-left-color: #ededed; border-top-color: #ededed; border-right-color: #a2a2a2; border-bottom-color: #a2a2a2; }
 
 paned > separator:selected { background-color: #D8761A; border-left-color: #ebb787; border-top-color: #ebb787; border-right-color: #9f5713; border-bottom-color: #9f5713; }
 

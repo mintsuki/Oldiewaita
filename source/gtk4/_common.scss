@@ -171,23 +171,7 @@ label {
     > selection { @extend %selected_items_disabled; }
   }
 
-  &.error {
-    color: mix($error_color, $fg_color, 50%);
-    &:disabled { color: mix($error_color,$insensitive_fg_color,50%); }
-  }
-  &.warning {
-    color: mix($warning_color, $fg_color, 50%);
-    &:disabled { color: mix($warning_color,$insensitive_fg_color,50%); }
-  }
-
-  &.success {
-    color: mix($success_color, $fg_color, 50%);
-    &:disabled { color: mix($success_color,$insensitive_fg_color,50%); }
-  }
-  &.accent {
-    color: mix($selected_bg_color, $fg_color, 50%);
-    &:disabled { color: mix($selected_bg_color,$insensitive_fg_color,50%); }
-  }
+	//entry and label with classes (.accent, .error, .warning, .success) moved to common_common.scss
 }
 
 .dim-label {
@@ -410,24 +394,8 @@ entry {
 
    // linked entries: all suppressed
 
+	//entry and label with classes (.accent, .error, .warning, .success) moved to common_common.scss
 
-  &.error {
-    color: mix($error_color, $fg_color, 50%);
-    &:disabled { color: mix($error_color,$insensitive_fg_color,50%); }
-  }
-  &.warning {
-    color: mix($warning_color, $fg_color, 50%);
-    &:disabled { color: mix($warning_color,$insensitive_fg_color,50%); }
-  }
-
-  &.success {
-    color: mix($success_color, $fg_color, 50%);
-    &:disabled { color: mix($success_color,$insensitive_fg_color,50%); }
-  }
-  &.accent {
-    color: mix($selected_bg_color, $fg_color, 50%);
-    &:disabled { color: mix($selected_bg_color,$insensitive_fg_color,50%); }
-  }
   .linked & {
     margin: 0; //for libadwaita
   }
@@ -485,7 +453,7 @@ $_dot_color: $warning_color; //if($variant=='light', $selected_bg_color, lighten
 
 %button,
 button {
-  @at-root %button_basic, & {
+  @at-root %button_basic, &, &.opaque, &.card {
 
     min-height: $button_min_height;
     min-width: $button_min_width;
@@ -493,6 +461,7 @@ button {
     border: $border_width solid;
     border-radius: $button_radius;
     transition: $button_transition;
+    font-weight: normal;
 
     @include button(normal);
 
@@ -833,6 +802,9 @@ button {
     border-radius: 9999px;
 
     label { padding: 0; }
+  }
+  &.pill {
+  	border-radius: 9999px;
   }
 }
 
@@ -1380,7 +1352,7 @@ combobox {
 %toolbar {
   padding: 4px;
   border-spacing: 4px;
-  $border-radius: $window_radius;
+  border-radius: $window_radius;
   border-width: $border_width;
   border-style: solid;
   color: $fg_color;
@@ -1532,6 +1504,19 @@ headerbar { //.top-bar is for Nautilus. This is not included in '../common/deskt
     color: $titlebar_backdrop_fg;
 
     transition: none;//$backdrop_transition;
+  }
+  
+  window.devel & {
+	  background-image: linear-gradient(45deg, 
+		    gtkalpha(currentColor, 0.1) 25%, 
+		    gtkalpha(currentColor, 0.0) 25%, 
+		    gtkalpha(currentColor, 0.0) 50%, 
+		    gtkalpha(currentColor, 0.1) 50%, 
+		    gtkalpha(currentColor, 0.1) 75%, 
+		    gtkalpha(currentColor, 0.0) 75% );
+		background-size: 5em 5em;
+		background-repeat: repeat;
+		background-position: center;
   }
 
   .title {
@@ -2289,7 +2274,9 @@ check,
 radio,{
   min-height: 14px;
   min-width: 14px;
-  border: 1px solid;
+  border: $border_width solid;
+  box-shadow: none; //against libadwaita
+  
   -gtk-icon-source: none;
 
   &, &.view, .view & {
@@ -3869,7 +3856,11 @@ menubutton {
   border-style: solid;
   @include relief($card_bg_color);
   box-shadow: none;
+  &.activatable, &.button {
+  	@extend %button_basic;
+  }
 }
+
 
 tabbox {
     //background-color: $bg_color;
@@ -3913,16 +3904,18 @@ tabbox {
 }
 
 splitbutton {
-    @extend %button_basic;
-    border-radius: 0px;
-    padding: 1px; //$border_width;
-    @include button(normal);
-    &:disabled {
-          @include button(insensitive);}
-    & > separator {border: none;}
-    & button, menubutton, arrow {margin: 0; padding: 0; min-width: 1.7em; min-height: 1.5em;}
-    headerbar &, .topbar & {
-        @extend %header_button;
+	&, &.text-button, &.image-button, &.flat {
+		@extend %button_basic;
+		border-radius: 0px;
+		padding: 1px; //$border_width;
+		@include button(normal);
+		&:disabled {
+		      @include button(insensitive);}
+		& > separator {border: none;}
+		& button, menubutton, arrow {margin: 0; padding: 0; min-width: 1.7em; min-height: 1.5em;}
+		headerbar &, .topbar & {
+		    @extend %header_button;
+	    }
     }
 }
 

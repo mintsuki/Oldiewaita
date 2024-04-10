@@ -57,11 +57,31 @@ $popover_radius: $window_radius;
   }
 }
 
+entry, label {
+  &.error, &.error > text {
+    color: mix($error_color, $fg_color, 50%);
+    &:disabled { color: mix($error_color,$insensitive_fg_color,50%); }
+  }
+  &.warning, &.warning > text {
+    color: mix($warning_color, $fg_color, 50%);
+    &:disabled { color: mix($warning_color,$insensitive_fg_color,50%); }
+  }
+
+  &.success, &.success > text {
+    color: mix($success_color, $fg_color, 50%);
+    &:disabled { color: mix($success_color,$insensitive_fg_color,50%); }
+  }
+  &.accent, &.accent > text {
+    color: $selected_bg_color;
+    &:disabled { color: mix($selected_bg_color,$insensitive_fg_color,50%); }
+  }
+}
+
 %draggable {
-    background-image: radial-gradient(circle closest-side, currentColor, currentColor 90%, transparent);
-    background-size: (2 * $border_width) (2 * $border_width);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: radial-gradient(circle, gtkalpha(currentColor, 0.4) 15%, gtkalpha(currentColor, 0) 20%);
+	background-size: 0.3em 0.3em;
+	background-repeat: repeat;
+	background-clip: padding-box;
 }
 
 %disabled_pattern {
