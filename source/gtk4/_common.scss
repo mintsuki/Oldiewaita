@@ -3870,10 +3870,13 @@ tabbox {
         & > tab {
             @extend %button_basic;
             border-radius: $button_radius;
-            @include button(normal);
-
+            //@include button(normal);
             @include focus-ring();
+            @extend %draggable;
 
+			& label {
+				background-color: $button_bg;
+			}
             &:hover {
               @include button(hover);
               -gtk-icon-filter: brightness(1.2);
@@ -3886,8 +3889,12 @@ tabbox {
               transition-duration: 50ms;
             }
 
-            &:selected:hover:not(:active) { @include button(checked-hover); }
-            &:selected, &:selected:active { @include button(checked-active); }
+            &:selected {
+            	label { background-color: $selected_bg_color;}
+            	&:hover:not(:active) { @include button(checked-hover); }
+            	&, &:active { @include button(checked-active); }
+            }
+
 
             //removed backdrop
 
