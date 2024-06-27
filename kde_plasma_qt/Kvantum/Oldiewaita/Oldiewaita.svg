@@ -20,13 +20,13 @@
      inkscape:pageopacity="1"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="243.49999"
-     inkscape:cy="374.49999"
-     inkscape:window-width="1850"
-     inkscape:window-height="1004"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="2"
+     inkscape:cx="90.25"
+     inkscape:cy="871.75"
+     inkscape:window-width="1852"
+     inkscape:window-height="1026"
+     inkscape:window-x="68"
+     inkscape:window-y="26"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1549"
      inkscape:showpageshadow="2"
@@ -10883,31 +10883,9 @@
      style="fill:#cccccc;fill-opacity:1.0"
      d="m 16.81595,816.15849 h 39.84527 v 39.84526 H 16.81595 Z" />
   <path
-     id="tab-normal-top"
-     style="fill:#f5f5f5;fill-opacity:1.0;stroke-width:0.354878"
-     d="m 16.81595,811.14045 h 39.84527 v 5.01804 H 16.81595 Z" />
-  <path
      id="tab-normal-right"
      style="fill:#a2a2a2;fill-opacity:1;stroke-width:0.354878"
      d="m 61.67926,816.15849 v 39.84526 h -5.01804 v -39.84526 z" />
-  <g
-     id="tab-normal-topright"
-     transform="translate(-0.82976,666.07362)">
-    <path
-       id="path17526"
-       style="fill:#a2a2a2;fill-opacity:1"
-       inkscape:transform-center-x="-0.019211102"
-       inkscape:transform-center-y="-1.0518174"
-       d="m 57.529402,150.08487 h 5.018041 v -5.01804 z"
-       sodipodi:nodetypes="cccc" />
-    <path
-       id="path17528"
-       style="fill:#f5f5f5;fill-opacity:1.0"
-       inkscape:transform-center-x="0.019210898"
-       inkscape:transform-center-y="1.0518126"
-       d="m 62.547443,145.06683 h -5.018041 v 5.01804 z"
-       sodipodi:nodetypes="cccc" />
-  </g>
   <path
      id="tab-normal-left"
      style="fill:#f5f5f5;fill-opacity:1.0;stroke-width:0.354878"
@@ -11043,13 +11021,13 @@
   <path
      id="floating-tab-normal"
      style="fill:none;fill-opacity:1"
-     d="m 18.258363,874.87014 h 39.84527 v 39.84526 h -39.84527 z" />
+     d="m 18.296793,880.27023 h 39.84527 v 39.84526 h -39.84527 z" />
   <use
      x="0"
      y="0"
      xlink:href="#tab-normal-top"
      id="floating-tab-normal-top"
-     transform="translate(1.4424133,58.711652)"
+     transform="translate(1.4424133,65.951501)"
      width="100%"
      height="100%" />
   <use
@@ -11057,7 +11035,7 @@
      y="0"
      xlink:href="#tab-normal-right"
      id="floating-tab-normal-right"
-     transform="translate(1.4424133,58.711652)"
+     transform="translate(1.4808436,64.111737)"
      width="100%"
      height="100%" />
   <use
@@ -11065,7 +11043,7 @@
      y="0"
      xlink:href="#tab-normal-topright"
      id="floating-tab-normal-topright"
-     transform="translate(1.4039913,58.711652)"
+     transform="translate(1.4039913,65.951501)"
      width="100%"
      height="100%" />
   <use
@@ -11073,13 +11051,13 @@
      y="0"
      xlink:href="#tab-normal-left"
      id="floating-tab-normal-left"
-     transform="translate(1.4424133,58.711652)"
+     transform="translate(1.4808436,64.111737)"
      width="100%"
      height="100%" />
   <path
      id="floating-tab-normal-bottom"
-     style="fill:#f5f5f5;fill-opacity:1.0;stroke-width:0.354878"
-     d="m 58.065203,919.73344 h -39.84526 v -5.01804 h 39.84526 z" />
+     style="fill:#f5f5f5;fill-opacity:1;stroke-width:0.354878"
+     d="m 58.103633,925.13353 h -39.84526 v -5.01804 h 39.84526 z" />
   <path
      id="tabframe-normal"
      style="fill:#c4c4c4;fill-opacity:1.0"
@@ -12205,24 +12183,8 @@
      x="0"
      y="0"
      xlink:href="#slider-normal-bottomright"
-     id="tab-normal-topleft"
-     transform="translate(-69.67218,71.01409)"
-     width="100%"
-     height="100%" />
-  <use
-     x="0"
-     y="0"
-     xlink:href="#slider-normal-bottomright"
-     id="floating-tab-normal-topleft"
-     transform="translate(-68.229767,129.72574)"
-     width="100%"
-     height="100%" />
-  <use
-     x="0"
-     y="0"
-     xlink:href="#slider-normal-bottomright"
      id="floating-tab-normal-bottomright"
-     transform="translate(-23.366457,174.58904)"
+     transform="translate(-23.328027,179.98913)"
      width="100%"
      height="100%" />
   <use
@@ -12230,7 +12192,7 @@
      y="0"
      xlink:href="#slider-normal-bottomright"
      id="floating-tab-normal-bottomleft"
-     transform="translate(-68.268187,174.58904)"
+     transform="translate(-68.229757,179.98913)"
      width="100%"
      height="100%" />
   <use
@@ -12516,48 +12478,134 @@
      id="path19653"
      style="fill:#b8b8b8;fill-opacity:1.0;stroke-width:0.354878"
      d="M -60.703492,956.93755 H -78.70349 v -2 h 17.999998 z" />
-  <path
-     id="tab-toggled-top"
-     style="fill:#ebb787;fill-opacity:1.0;stroke-width:0.354878"
-     d="m 145.80997,811.14045 h 39.84527 v 5.01804 h -39.84527 z" />
-  <g
-     id="tab-toggled-topright"
-     transform="translate(128.16426,666.07362)">
-    <path
-       id="path2247"
-       style="fill:#9f5713;fill-opacity:1.0"
-       inkscape:transform-center-x="-0.019211102"
-       inkscape:transform-center-y="-1.0518174"
-       d="m 57.529402,150.08487 h 5.018041 v -5.01804 z"
-       sodipodi:nodetypes="cccc" />
-    <path
-       id="path2249"
-       style="fill:#ebb787;fill-opacity:1.0"
-       inkscape:transform-center-x="0.019210898"
-       inkscape:transform-center-y="1.0518126"
-       d="m 62.547443,145.06683 h -5.018041 v 5.01804 z"
-       sodipodi:nodetypes="cccc" />
-  </g>
-  <path
-     id="tab-toggled-topleft"
-     style="fill:#ebb787;fill-opacity:1.0;stroke-width:1"
-     d="m 140.79193,811.14045 h 5.01804 v 5.01804 h -5.01804 z" />
   <use
      x="0"
      y="0"
      xlink:href="#tab-toggled-top"
      id="floating-tab-toggled-top"
-     transform="translate(-0.26281,57.87084)" />
+     transform="translate(-0.26281,65.11069)" />
   <use
      x="0"
      y="0"
      xlink:href="#tab-toggled-topright"
      id="floating-tab-toggled-topright"
-     transform="translate(-0.26281,57.87084)" />
+     transform="translate(-0.26281,65.11069)" />
   <use
      x="0"
      y="0"
      xlink:href="#tab-toggled-topleft"
      id="floating-tab-toggled-topleft"
-     transform="translate(-0.26281,57.87084)" />
+     transform="translate(-0.26281,65.11069)" />
+  <g
+     id="tab-normal-top">
+    <path
+       id="tab-normal-top-sup"
+       style="fill:#f5f5f5;fill-opacity:1;stroke-width:0.354878"
+       d="m 16.81595,803.9006 h 39.84527 v 5.01804 H 16.81595 Z" />
+    <path
+       id="path1"
+       style="fill:#cccccc;fill-opacity:1;stroke-width:0.354878"
+       d="M 56.66122,813.93668 H 16.81596 v -5.01804 h 39.84526 z" />
+  </g>
+  <g
+     id="tab-normal-topright">
+    <g
+       id="tab-normal-topright-sup"
+       transform="translate(-0.82976,658.83377)">
+      <path
+         id="path17526"
+         style="fill:#a2a2a2;fill-opacity:1"
+         inkscape:transform-center-x="-0.019211102"
+         inkscape:transform-center-y="-1.0518174"
+         d="m 57.529402,150.08487 h 5.018041 v -5.01804 z"
+         sodipodi:nodetypes="cccc" />
+      <path
+         id="path17528"
+         style="fill:#f5f5f5;fill-opacity:1"
+         inkscape:transform-center-x="0.019210898"
+         inkscape:transform-center-y="1.0518126"
+         d="m 62.547443,145.06683 h -5.018041 v 5.01804 z"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#slider-normal-topleft"
+       id="use1"
+       transform="translate(20.05445,113.65558)"
+       width="100%"
+       height="100%" />
+  </g>
+  <g
+     id="tab-normal-topleft">
+    <use
+       x="0"
+       y="0"
+       xlink:href="#slider-normal-bottomright"
+       id="tab-normal-topleft-sup"
+       transform="translate(-69.67218,63.774241)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#slider-normal-bottomright"
+       id="use2"
+       transform="translate(-69.67218,68.79228)"
+       width="100%"
+       height="100%" />
+  </g>
+  <use
+     x="0"
+     y="0"
+     xlink:href="#tab-normal-topleft"
+     id="floating-tab-normal-topleft"
+     transform="translate(1.4808436,65.951501)" />
+  <g
+     id="tab-toggled-topleft">
+    <path
+       id="tab-toggled-topleft-up"
+       style="fill:#ebb787;fill-opacity:1;stroke-width:1"
+       d="m 140.79193,803.9006 h 5.01804 v 5.01804 h -5.01804 z" />
+    <path
+       id="path3"
+       style="fill:#ebb787;fill-opacity:1;stroke-width:1"
+       d="m 140.79193,808.91864 h 5.01804 v 5.01804 h -5.01804 z" />
+  </g>
+  <g
+     id="tab-toggled-topright">
+    <g
+       id="tab-toggled-topright-up"
+       transform="translate(128.16426,658.83377)">
+      <path
+         id="path2247"
+         style="fill:#9f5713;fill-opacity:1"
+         inkscape:transform-center-x="-0.019211102"
+         inkscape:transform-center-y="-1.0518174"
+         d="m 57.529402,150.08487 h 5.018041 v -5.01804 z"
+         sodipodi:nodetypes="cccc" />
+      <path
+         id="path2249"
+         style="fill:#ebb787;fill-opacity:1"
+         inkscape:transform-center-x="0.019210898"
+         inkscape:transform-center-y="1.0518126"
+         d="m 62.547443,145.06683 h -5.018041 v 5.01804 z"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <path
+       id="path4"
+       style="fill:#9f5713;fill-opacity:1;stroke-width:1"
+       d="m 185.69366,808.91864 h 5.01804 v 5.01804 h -5.01804 z" />
+  </g>
+  <g
+     id="tab-toggled-top">
+    <path
+       id="tab-toggled-top-up"
+       style="fill:#ebb787;fill-opacity:1;stroke-width:0.354878"
+       d="m 145.80997,803.9006 h 39.84527 v 5.01804 h -39.84527 z" />
+    <path
+       id="path5"
+       style="fill:#d8761a;fill-opacity:1;stroke-width:0.354878"
+       d="m 145.80997,808.91864 h 39.84527 v 5.01804 h -39.84527 z" />
+  </g>
 </svg>
