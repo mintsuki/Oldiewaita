@@ -7,7 +7,7 @@
 #  2. go up one directory, to "source", and execute "./compile.sh light" or "./compile.sh dark" depending on whether the theme is light or dark
 
 
-# Light Turquoise: light, with grayish tones and turquoise accents, easy on the eyes
+# VGUI2: OG Steam goodness
 
 vwindow_fg="#ffffff"
 vwindow_bg="#4d5845"
@@ -23,8 +23,8 @@ vbutton_checked_bg=$vselected_bg
 vbutton_checked_fg=$vselected_fg
 
 
-vdisabled_fg="#807a6a"
-vdisabled_bg="#c3bbaf"
+vdisabled_fg="#857777"
+vdisabled_bg="#3b3b3b"
 
 # Usually an automatic fg color on these backgrounds should check this value!
 
@@ -46,7 +46,7 @@ vosd_fg=$vhint_fg
 vosd_bg=$vhint_bg
 
 vlink_fg="#958831"
-vlink_visited_fg="#3f4638"
+vlink_visited_fg="#699531"
 
 vbutton_radius="0px"
 vwindow_radius="0px"
