@@ -3651,6 +3651,7 @@ colorchooser .popover.osd { border-radius: 5px; }
  * Window Decorations *
  *********************/
 decoration {
+ 
   $_wm_border: if($variant=='light', black, $selected_bg_color);
   $_wm_border_backdrop: if($variant=='light', black, mix($bg_color, $fg_color, 75%));
   border-radius: $window_radius $window_radius 0 0;
@@ -3681,6 +3682,12 @@ decoration {
     //@include relief(transparent, raised, $titlebar_backdrop_bg );
       box-shadow: 0 0.4em 1em 0 black,
               0 0 0 1px $_wm_border_backdrop;
+  }
+  .ssd &, :not(.csd) & {
+  	box-shadow: 0 0 0 1px $_wm_border;
+  	&:backdrop {
+  		box-shadow: 0 0 0 1px $_wm_border_backdrop;
+  	}
   }
 
   .maximized &,
