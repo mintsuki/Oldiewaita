@@ -3692,9 +3692,10 @@ decoration {
   .solid-csd & {
     padding: 4px;
     border: 1px solid $_wm_border;
-    background-color: $bg_color;
+    background-color: $titlebar_active_bg;
     box-shadow: none;
   	&:backdrop {
+  		background-color: $titlebar_backdrop_bg;
   		border-color: $_wm_border_backdrop;
   	}
   }

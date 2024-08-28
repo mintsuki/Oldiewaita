@@ -1451,9 +1451,9 @@ decoration:backdrop { box-shadow: 0 0.4em 1em 0 black, 0 0 0 1px black; }
 
 .ssd decoration:backdrop, :not(.csd) decoration:backdrop { box-shadow: 0 0 0 1px black; }
 
-.solid-csd decoration { padding: 4px; border: 1px solid black; background-color: #bbbbbb; box-shadow: none; }
+.solid-csd decoration { padding: 4px; border: 1px solid black; background-color: #AF8F71; box-shadow: none; }
 
-.solid-csd decoration:backdrop { border-color: black; }
+.solid-csd decoration:backdrop { background-color: #bbbbbb; border-color: black; }
 
 .maximized decoration, .fullscreen decoration { border-radius: 0; box-shadow: none; border: none; }
 
