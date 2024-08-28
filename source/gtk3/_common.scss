@@ -3689,6 +3689,15 @@ decoration {
   		box-shadow: 0 0 0 1px $_wm_border_backdrop;
   	}
   }
+  .solid-csd & {
+    padding: 4px;
+    border: 1px solid $_wm_border;
+    background-color: $bg_color;
+    box-shadow: none;
+  	&:backdrop {
+  		border-color: $_wm_border_backdrop;
+  	}
+  }
 
   .maximized &,
   .fullscreen & { border-radius: 0; box-shadow: none; border: none;}
